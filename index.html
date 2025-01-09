@@ -4,11 +4,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wdd 231</title>
+    <title>WDD 231 - Web Frontend Development I - Alejandro Esteves</title>
+    <meta name="description"
+        content="Welcome to my page! My name is Alejandro Esteves and this is for WDD 131 - Dynamic Web Fundamentals">
+    <meta name="author" content="Alejandro Esteves">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
 </head>
 
 <body>
-<h1>Bruh</h1>
+    <header>
+        <div class="header-wrap">
+            <img src="images/my-picture.webp" alt="This is my picture!" width="180" height="136" class="my-picture">
+            <h1>Alejandro R. Esteves Gallegos</h1>
+        </div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Chamber</a>
+            <a href="#">GitHub Profile</a>
+            <a href="#">LinkedIn</a>
+        </nav>
+    </header>
+    <main>
+        <div class="card course-work">
+            <h2>Course Work</h2>
+            <span class="card-content">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </span>
+        </div>
+        <div class="card my-country">
+            <h2>Lima, Peru</h2>
+            <img src="images/peru-flag.webp" alt="Lima, Peru">
+            <figcaption><em>Costa Verde, Miraflores</em></figcaption>
+        </div>
+        <div class="card my-certificate">
+            <h2>Web and Coputer Programming Certificate</h2>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-wrap">
+            <p>©️<span id="currentyear"></span> 🐥 Alejandro Esteves 🐥 Lima, Peru</p>
+            <p class="lastModified" id="lastModified">lastModified</p>
+        </div>
+    </footer>
 </body>
 
 </html>

@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.header-wrap {
+    /* Direct son from Header which is grid */
+    background-color: #174e70;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+h1 {
+    margin: 2em;
+    color: white;
+    font-size: 1.5em;
+}
+
+.my-picture {
+    width: 10em;
+    height: 7em;
+    box-shadow: 0px 0px 20px rgb(0, 0, 0);
+}
+
+
+
+nav {
+    background-color: #000000;
+    display: flex;
+}
+
+nav a,
+nav a:visited {
+    flex-basis: 100%;
+    flex-grow: 1;
+    flex-shrink: 1;
+    display: block;
+    font-size: 1rem;
+    text-align: center;
+    padding: 1rem 0.5rem;
+    color: #fff;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #fff;
+    background-color: rgb(66, 66, 66);
+    font-weight: 600;
+}
+
+header a,
+header a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+/*MAIN*/
+
+main {
+    display: grid;
+    padding: 0;
+    /* ---------- */
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin: 10px auto;
+    max-width: 960px;
+}
+
+.card {
+    /* This is for styling .card's together*/
+    border-radius: .5em;
+    border: 1px solid rgb(183, 183, 183);
+    margin: 5px;
+}
+
+.course-work {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-content {
+    margin: 2em;
+}
+
+h2 {
+    background-color: #174e70;
+    color: #fff;
+    text-align: center;
+}
+
+.my-country {
+    text-align: center;
+}
+
+.my-certificate {
+    grid-column: 1/3;
+}
+
+
+/*FOOTER*/
+
+footer {
+    /* Direct child of .body-first-wrap which is grid */
+    display: flex;
+    background-color: #174e70;
+    color: white;
+    padding: 10px;
+
+
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
