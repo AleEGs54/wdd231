@@ -13,24 +13,25 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="styles/base.css">
-    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/main.js" defer></script>
 </head>
 
 <body>
     <header>
         <div class="header-wrap">
             <img src="images/my-picture.webp" alt="This is my picture!" width="180" height="136" class="my-picture">
-            <h1>Alejandro R. Esteves Gallegos</h1>
+            <h1>Alejandro Esteves Gallegos</h1>
         </div>
+        <a href="#" data-message="This is a menu button!" id="menu"></a>
         <nav>
             <a href="#">Home</a>
             <a href="#">Chamber</a>
-            <a href="#">GitHub Profile</a>
-            <a href="#">LinkedIn</a>
+            <a href="https://github.com/AleEGs54">GitHub Profile</a>
+            <a href="https://www.linkedin.com/in/estevesgallegosa/">LinkedIn</a>
         </nav>
     </header>
     <main>
-        <div class="card course-work">
+        <section class="card course-work">
             <h2>Course Work</h2>
             <span class="card-content">
                 <ul>
@@ -39,31 +40,31 @@
                     <li></li>
                 </ul>
             </span>
-        </div>
-        <div class="card my-country">
+        </section>
+        <section class="card my-country">
             <h2>Lima, Peru</h2>
             
                 <figure class="country-picture">
                     <img src="images/miraflores-costa-verde.webp" alt="Lima, Peru" width="300" height="200">
                     <figcaption><em>Costa Verde, Miraflores</em></figcaption>
                 </figure>
-        </div>
-        <div class="card my-certificate">
+        </section>
+        <section class="card my-certificate">
             <h2>Web and Computer Programming Certificate</h2>
             <div class="filter-bar">
-                <span class="filter">All</span>
-                <span class="filter">CSE</span>
-                <span class="filter">WDD</span>
+                <a href="#" class="filter" id="allButton">All</a>
+                <a href="#" class="filter" id="cseButton">CSE</a>
+                <a href="#" class="filter" id="wddButton">WDD</a>
             </div>
-            <div class="classes-block">
-                <span class="class class-completed">CSE 110</span>
-                <span class="class class-completed">WDD 130</span>
-                <span class="class class-completed">CSE 111</span>
-                <span class="class">CSE 210</span>
-                <span class="class class-completed">WDD 131</span>
-                <span class="class">WDD 231</span>
+            <div class="courses-block">
+                <span class="course course-completed">CSE 110</span>
+                <span class="course course-completed">WDD 130</span>
+                <span class="course course-completed">CSE 111</span>
+                <span class="course">CSE 210</span>
+                <span class="course course-completed">WDD 131</span>
+                <span class="course">WDD 231</span>
             </div>
-        </div>
+        </section>
     </main>
     <footer>
         <div class="footer-wrap">

@@ -8,6 +8,7 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+
 .header-wrap {
     /* Direct son from Header which is grid */
     background-color: #174e70;
@@ -15,6 +16,7 @@ body {
     justify-content: center;
     align-items: center;
     padding: 20px;
+    position: relative;
 }
 
 h1 {
@@ -29,11 +31,10 @@ h1 {
     box-shadow: 0px 0px 20px rgb(0, 0, 0);
 }
 
-
-
 nav {
     background-color: #000000;
     display: flex;
+    align-items: center;
 }
 
 nav a,
@@ -61,11 +62,30 @@ header a:visited {
     color: white;
 }
 
+/* Creating the burger button */
+
+#menu {
+    font-size: 1.5rem;
+    background: none;
+    border: 0;
+    color: #fff;
+    position: absolute;
+    top: 0.6rem;
+    right: 1.7rem;
+    text-decoration: none;
+    display: none;
+}
+
+
+#menu::before{
+    content: '☰';
+}
+
 /*MAIN*/
 
 main {
     display: grid;
-    padding: 0;
+    padding: 10px;
     /* ---------- */
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -134,15 +154,20 @@ h2 {
     border-radius: 0.2em;
 }
 
+.filter:visited, .filter{
+    color: white;
+    text-decoration: none;
+}
 
-.classes-block{
+
+.courses-block{
     margin-top: 1em;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr 1fr;
 }
 
-.class{
+.course{
     margin: 1em;
     padding: 1em;
     border: 1px solid rgb(183, 183, 183);
@@ -152,7 +177,7 @@ h2 {
     font-weight: bold;
 }
 
-.class-completed{
+.course-completed{
     background-color: rgb(94, 53, 33);
     color: white;
 }
@@ -175,6 +200,12 @@ footer {
 /* Media queries Phone view */
 
 @media screen and (max-width: 600px) {
+
+    /* Adjusting te header */
+    h1{
+        font-size: larger;
+    }
+
     /* Adjusting the main display */
     main {
         display: flex;
@@ -185,12 +216,48 @@ footer {
         margin: 1em;
     }
 
-    .classes-block{
+    .courses-block{
         display: flex;
         flex-direction: column;
     }
 
-    .class{
+    .course{
         margin: .5em;
     }
+
+    /* Adjusting the 'a' element to dissapear*/
+    nav a{
+        display: none;
+        width: 100%;
+    }
+
+    nav a:hover{
+        background-color:transparent;
+    }
+
+    #menu{
+        display: block;
+    }
+
+    /* When the user clicks on the burguer button, it switches to an 'X' */
+    #menu.open::before{
+        content: 'X';
+    }
+
+
+    /* When the user clikcs the burguer, the nav changes...*/
+    nav.open {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    /* ... and shows up */
+    nav.open a {
+        display: block;
+    }
+
+    /* Hay tres elementos afectados cuando se abre una hamburguesa: el h1, el boton hamburguesa y el nav */
+
 }
+
+
