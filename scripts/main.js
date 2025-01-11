@@ -94,25 +94,32 @@ const courses = [
 
 //By default all the courses will be displayed
 createCourseCard(courses);
+displayTotalCredits(courses);
 
 //If user clicks on "All" button, it will display all the courses
 const allButton = document.querySelector('#allButton');
 allButton.addEventListener('click', () => {
     createCourseCard(courses);
+
+    //Display de credits
+    displayTotalCredits(courses);
 });
 
 //If user clicks on "CSE" button, it will display the filtered results
 const cseButton = document.querySelector('#cseButton');
 cseButton.addEventListener('click', () => {
-    let csecourses = courses.filter(aCourse => aCourse.subject == 'CSE');
-    createCourseCard(csecourses);
+    let cseCourses = courses.filter(aCourse => aCourse.subject == 'CSE');
+    createCourseCard(cseCourses);
+    displayTotalCredits(cseCourses)
+
 });
 
 //If user clicks on "WDD" button, it will display the filtered results
 const wddButton = document.querySelector('#wddButton');
 wddButton.addEventListener('click', () => {
-    let wddcourses = courses.filter(aCourse => aCourse.subject == 'WDD');
-    createCourseCard(wddcourses);
+    let wddCourses = courses.filter(aCourse => aCourse.subject == 'WDD');
+    createCourseCard(wddCourses);
+    displayTotalCredits(wddCourses)
 });
 
 
@@ -140,8 +147,20 @@ function createCourseCard(filteredcourses){
         //Appends it to it's father
         let coursesBlock = document.querySelector('.courses-block');
         coursesBlock.appendChild(card);
+
     });
 }
+
+//Function to display the total amount of credits earned by completing the courses in display
+function displayTotalCredits(filteredArray)
+{
+    //Gets the variable of the html element
+    const creditDisplayer = document.querySelector('#credit-displayer');
+
+    //Calculates the total value
+    let totalCredits = filteredArray.reduce((accumulator, course) => accumulator + course.credits, 0);
+    creditDisplayer.textContent = `${totalCredits}`;
+};
 
 // Select the DOM elements for output
 const currentyear = document.querySelector("#currentyear");
@@ -152,4 +171,4 @@ const today = new Date();
 
 // writing the date
 currentyear.innerHTML = `${today.getFullYear()}`;
-lastModified.innerHTML = `Last Modification: ${document.lastModified}`;
+lastModified.innerHTML = `Last Update: ${document.lastModified}`;

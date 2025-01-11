@@ -159,9 +159,14 @@ h2 {
     text-decoration: none;
 }
 
+.informative-p{
+    text-align: center;
+    margin: .7em 0;
+
+}
 
 .courses-block{
-    margin-top: 1em;
+    margin-top: 0;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr 1fr;
@@ -180,6 +185,11 @@ h2 {
 .course-completed{
     background-color: rgb(94, 53, 33);
     color: white;
+    box-shadow: 0 0 15px #000;
+}
+
+.course-completed::before{
+    content: '⭐️ ';
 }
 
 /*FOOTER*/
@@ -195,6 +205,10 @@ footer {
     text-align: center;
     justify-content: center;
     align-items: center;
+}
+
+.lastModified{
+    color: yellow;
 }
 
 /* Media queries Phone view */
@@ -225,6 +239,7 @@ footer {
         margin: .5em;
     }
 
+
     /* Adjusting the 'a' element to dissapear*/
     nav a{
         display: none;
@@ -233,6 +248,7 @@ footer {
 
     nav a:hover{
         background-color:transparent;
+        font-size: 1.1em;
     }
 
     #menu{
