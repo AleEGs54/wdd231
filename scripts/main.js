@@ -175,7 +175,7 @@ lastModified.innerHTML = `Last Update: ${document.lastModified}`;
 
 // MEDIA QUERY
 
-const mediaQuery = window.matchMedia('(max-width: 600px)');
+const mediaQuery = window.matchMedia('(max-width: 650px)');
 
 // Function to add the CSS for small screen (max-width: 600px)
 function addMediaQueryStyles() {
