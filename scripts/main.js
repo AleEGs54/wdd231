@@ -172,3 +172,89 @@ const today = new Date();
 // writing the date
 currentyear.innerHTML = `${today.getFullYear()}`;
 lastModified.innerHTML = `Last Update: ${document.lastModified}`;
+
+// MEDIA QUERY
+
+const mediaQuery = window.matchMedia('(max-width: 600px)');
+
+// Function to add the CSS for small screen (max-width: 600px)
+function addMediaQueryStyles() {
+    const style = document.createElement('style');
+    style.innerHTML = `
+        /* Adjusting the header */
+        h1 {
+            font-size: larger;
+        }
+
+        /* Adjusting the main display */
+        main {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card {
+            margin: 1em;
+        }
+
+        .courses-block {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .course {
+            margin: .5em;
+        }
+
+        /* Adjusting the 'a' element to disappear */
+        nav a {
+            display: none;
+            width: 100%;
+        }
+
+        nav a:hover {
+            background-color: transparent;
+            font-size: 1.1em;
+        }
+
+        #menu {
+            display: block;
+        }
+
+        /* When the user clicks on the burger button, it switches to an 'X' */
+        #menu.open::before {
+            content: 'X';
+        }
+
+        /* When the user clicks the burger, the nav changes... */
+        nav.open {
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* ... and shows up */
+        nav.open a {
+            display: block;
+        }
+    `;
+    document.head.appendChild(style);
+}
+
+// Apply styles if media query matches
+if (mediaQuery.matches) {
+    addMediaQueryStyles();
+}
+
+// Listen for changes to the media query and update styles
+mediaQuery.addEventListener('change', (e) => {
+    const style = document.querySelector('style');
+    
+    if (e.matches) {
+        if (!style) {
+            addMediaQueryStyles();
+        }
+    } else {
+        if (style) {
+            style.remove();
+        }
+    }
+});
