@@ -1,6 +1,6 @@
 /* Media queries Phone view */
 
-/* @media screen and (max-width: 37.5em) { */
+@media (max-width: 600px) {
 
     /* Adjusting te header */
     h1{
@@ -61,6 +61,6 @@
 
     /* Hay tres elementos afectados cuando se abre una hamburguesa: el h1, el boton hamburguesa y el nav */
 
-/* } */
+}
 
 
