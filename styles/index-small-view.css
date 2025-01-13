@@ -1,6 +1,6 @@
 /* Media queries Phone view */
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 37.5em) {
 
     /* Adjusting te header */
     h1{
