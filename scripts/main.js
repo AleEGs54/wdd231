@@ -173,7 +173,7 @@ const today = new Date();
 currentyear.innerHTML = `${today.getFullYear()}`;
 lastModified.innerHTML = `Last Update: ${document.lastModified}`;
 
-// MEDIA QUERY
+// MEDIA QUERY TO IMPLEMENT TO THE DOM WHEN THE WIDTH IS 650PX
 
 const mediaQuery = window.matchMedia('(max-width: 650px)');
 
