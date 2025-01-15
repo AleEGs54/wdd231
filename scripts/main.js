@@ -175,86 +175,86 @@ lastModified.innerHTML = `Last Update: ${document.lastModified}`;
 
 // MEDIA QUERY TO IMPLEMENT TO THE DOM WHEN THE WIDTH IS 650PX
 
-const mediaQuery = window.matchMedia('(max-width: 650px)');
+// const mediaQuery = window.matchMedia('(max-width: 650px)');
 
-// Function to add the CSS for small screen (max-width: 600px)
-function addMediaQueryStyles() {
-    const style = document.createElement('style');
-    style.innerHTML = `
-        /* Adjusting the header */
-        h1 {
-            font-size: larger;
-        }
+// // Function to add the CSS for small screen (max-width: 600px)
+// function addMediaQueryStyles() {
+//     const style = document.createElement('style');
+//     style.innerHTML = `
+//         /* Adjusting the header */
+//         h1 {
+//             font-size: larger;
+//         }
 
-        /* Adjusting the main display */
-        main {
-            display: flex;
-            flex-direction: column;
-        }
+//         /* Adjusting the main display */
+//         main {
+//             display: flex;
+//             flex-direction: column;
+//         }
 
-        .card {
-            margin: 1em;
-        }
+//         .card {
+//             margin: 1em;
+//         }
 
-        .courses-block {
-            display: flex;
-            flex-direction: column;
-        }
+//         .courses-block {
+//             display: flex;
+//             flex-direction: column;
+//         }
 
-        .course {
-            margin: .5em;
-        }
+//         .course {
+//             margin: .5em;
+//         }
 
-        /* Adjusting the 'a' element to disappear */
-        nav a {
-            display: none;
-            width: 100%;
-        }
+//         /* Adjusting the 'a' element to disappear */
+//         nav a {
+//             display: none;
+//             width: 100%;
+//         }
 
-        nav a:hover {
-            background-color: transparent;
-            font-size: 1.1em;
-        }
+//         nav a:hover {
+//             background-color: transparent;
+//             font-size: 1.1em;
+//         }
 
-        #menu {
-            display: block;
-        }
+//         #menu {
+//             display: block;
+//         }
 
-        /* When the user clicks on the burger button, it switches to an 'X' */
-        #menu.open::before {
-            content: 'X';
-        }
+//         /* When the user clicks on the burger button, it switches to an 'X' */
+//         #menu.open::before {
+//             content: 'X';
+//         }
 
-        /* When the user clicks the burger, the nav changes... */
-        nav.open {
-            display: flex;
-            flex-direction: column;
-        }
+//         /* When the user clicks the burger, the nav changes... */
+//         nav.open {
+//             display: flex;
+//             flex-direction: column;
+//         }
 
-        /* ... and shows up */
-        nav.open a {
-            display: block;
-        }
-    `;
-    document.head.appendChild(style);
-}
+//         /* ... and shows up */
+//         nav.open a {
+//             display: block;
+//         }
+//     `;
+//     document.head.appendChild(style);
+// }
 
-// Apply styles if media query matches
-if (mediaQuery.matches) {
-    addMediaQueryStyles();
-}
+// // Apply styles if media query matches
+// if (mediaQuery.matches) {
+//     addMediaQueryStyles();
+// }
 
-// Listen for changes to the media query and update styles
-mediaQuery.addEventListener('change', (e) => {
-    const style = document.querySelector('style');
+// // Listen for changes to the media query and update styles
+// mediaQuery.addEventListener('change', (e) => {
+//     const style = document.querySelector('style');
     
-    if (e.matches) {
-        if (!style) {
-            addMediaQueryStyles();
-        }
-    } else {
-        if (style) {
-            style.remove();
-        }
-    }
-});
+//     if (e.matches) {
+//         if (!style) {
+//             addMediaQueryStyles();
+//         }
+//     } else {
+//         if (style) {
+//             style.remove();
+//         }
+//     }
+// });
