@@ -31,17 +31,22 @@ h1 {
     box-shadow: 0px 0px 20px rgb(0, 0, 0);
 }
 
-nav {
+
+
+.navigation {
     background-color: #000000;
     display: flex;
-    align-items: center;
+    flex-direction: row;
+}
+.navigation li{
+    width: 100%;
+    list-style-type: none;
+
 }
 
-nav a,
-nav a:visited {
-    flex-basis: 100%;
-    flex-grow: 1;
-    flex-shrink: 1;
+.navigation a,
+.navigation a:visited {
+    flex: 1 1 100%;
     display: block;
     font-size: 1rem;
     text-align: center;
@@ -78,7 +83,12 @@ header a:visited {
 
 
 #menu::before{
-    content: '☰';
+    content: '\2630';
+}
+
+.current-menu-item{
+    /* To indicate the user where he is right now */
+    background-color: rgba(148, 148, 148, 0.2);
 }
 
 /*MAIN*/

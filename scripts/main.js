@@ -1,6 +1,6 @@
 
 const hamButton = document.querySelector('#menu');
-const navigation = document.querySelector('nav');
+const navigation = document.querySelector('#animateme');
 // const headerOne = document.querySelector('.header-wrap');
 
 hamButton.addEventListener('click', function () {

@@ -28,10 +28,10 @@
 
 
     /* Adjusting the 'a' element to dissapear*/
-    nav a{
+    /* .navigation li{
         display: none;
         width: 100%;
-    }
+    } */
 
     nav a:hover{
         background-color:transparent;
@@ -49,14 +49,33 @@
 
 
     /* When the user clikcs the burguer, the nav changes...*/
-    nav.open {
+    /* .navigation.open  {
         display: flex;
         flex-direction: column;
-    }
+    } */
     
     /* ... and shows up */
-    nav.open a {
+    /* .navigation.open li {
         display: block;
+    } */
+
+    /* The ul chnages to column and hiddes the li (if the grid-template-rows is at 0fr)*/
+    ul.navigation{
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+    }
+
+    /* The nav becomes grid and instead of switching between none and block displays, will switch between 0fr and 1fr, so the effect of transformation works */
+    nav{
+        display: grid;
+        grid-template-rows: 0fr;
+        transition: grid-template-rows 0.5s ease-out;
+    }
+
+
+    nav.open{
+        grid-template-rows: 1fr;
     }
 
     /* Hay tres elementos afectados cuando se abre una hamburguesa: el h1, el boton hamburguesa y el nav */
