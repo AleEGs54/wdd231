@@ -8,10 +8,20 @@
     --footer-color: #dadada;
 
     font-family: 'Fira Sans', sans-serif;
+
+    /* Basic reset */
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  
+  
+
 }
 
 html{
     box-sizing: border-box;
+    height: 100%;
 }
 
 /* Small views as base for this project */
