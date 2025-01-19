@@ -169,7 +169,7 @@ h2{
 
 #cards{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(23em, 1fr));
+    
     gap: 1em;
     justify-items: center;
     align-items: center;
