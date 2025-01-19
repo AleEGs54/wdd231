@@ -164,11 +164,9 @@ h2{
 .card img{
     width: 100%;
     height: auto;
-    max-width: 10em;
-    max-height: 10em;
+    max-width: 5em;
+    max-height: 5em;
 }
-
-
 
 #cards{
     display: grid;
