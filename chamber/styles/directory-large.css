@@ -84,7 +84,7 @@
         grid-template-columns: repeat(auto-fit, minmax(23em, 1fr));
     }
 
-    #cards img{
+    #cards.card img{
         width: 12.5em;
         height: auto;
     }
