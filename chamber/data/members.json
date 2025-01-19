@@ -6,7 +6,7 @@
       "address": "Av. Larco 1234, Miraflores, Lima",
       "phone": "+51 1 123 4567",
       "website": "https://inkaartisanal.pe",
-      "icon": "images/peru-made-crafts.png",
+      "icon": "images/peru-made-crafts.webp",
       "membership_level": 2,
       "description": "Handmade artisanal crafts showcasing Peruvian heritage.",
       "hours_of_operation": "Monday to Saturday, 10:00 AM - 8:00 PM"
@@ -16,7 +16,7 @@
       "address": "Calle Pisco 567, San Isidro, Lima",
       "phone": "+51 1 234 5678",
       "website": "https://andeancoffee.pe",
-      "icon": "images/andean-coffee-logo.jpg",
+      "icon": "images/andean-coffee-logo.webp",
       "membership_level": 3,
       "description": "Premium coffee sourced directly from Peruvian farmers.",
       "hours_of_operation": "Every day, 7:00 AM - 9:00 PM"
@@ -26,7 +26,7 @@
       "address": "Av. Javier Prado Este 789, San Borja, Lima",
       "phone": "+51 1 345 6789",
       "website": "https://limatechsolutions.pe",
-      "icon": "images/limat-tech-solutions-logo.png",
+      "icon": "images/limat-tech-solutions-logo.webp",
       "membership_level": 3,
       "description": "IT consulting and software development services.",
       "hours_of_operation": "Monday to Friday, 9:00 AM - 6:00 PM"
@@ -36,7 +36,7 @@
       "address": "Jr. Huancavelica 890, Centro Histórico, Lima",
       "phone": "+51 1 456 7890",
       "website": "https://limagourmettours.pe",
-      "icon": "images/lima-gourmet-logo.png",
+      "icon": "images/lima-gourmet-logo.webp",
       "membership_level": 2,
       "description": "Exclusive culinary experiences featuring Peruvian gastronomy.",
       "hours_of_operation": "Monday to Saturday, 10:00 AM - 7:00 PM"
@@ -46,7 +46,7 @@
       "address": "Av. Angamos Oeste 345, Surquillo, Lima",
       "phone": "+51 1 567 8901",
       "website": "https://greenlivingstore.pe",
-      "icon": "images/green-living-store-icon.jpg",
+      "icon": "images/green-living-store-icon.webp",
       "membership_level": 1,
       "description": "Eco-friendly products for sustainable living.",
       "hours_of_operation": "Monday to Sunday, 9:00 AM - 9:00 PM"
@@ -56,7 +56,7 @@
       "address": "Av. Benavides 456, Miraflores, Lima",
       "phone": "+51 1 678 9012",
       "website": "https://cuscotravel.pe",
-      "icon": "images/cusco-travel-agency-logo.png",
+      "icon": "images/cusco-travel-agency-logo.webp",
       "membership_level": 3,
       "description": "Personalized travel packages to explore Cusco and the Andes.",
       "hours_of_operation": "Monday to Saturday, 8:00 AM - 6:00 PM"
@@ -66,7 +66,7 @@
       "address": "Av. La Molina 789, La Molina, Lima",
       "phone": "+51 1 789 0123",
       "website": "https://cronoswellnessspa.pe",
-      "icon": "images/cronos-wellness-spa-logo.png",
+      "icon": "images/cronos-wellness-spa-logo.webp",
       "membership_level": 2,
       "description": "Relaxation and wellness services, including massages and facials.",
       "hours_of_operation": "Every day, 10:00 AM - 8:00 PM"
