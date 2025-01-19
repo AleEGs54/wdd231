@@ -131,6 +131,7 @@ main{
     margin: 0 auto;
 } 
 
+
 .views-buttons{
     display: flex;
     justify-content: center;
@@ -149,6 +150,15 @@ main{
 
 .views-buttons button:hover{
     background-color: var(--secondary-color);
+}
+
+h2{
+    font-size: large;
+}
+
+.card img{
+    width: 12em;
+    height: auto;
 }
 
 #cards{

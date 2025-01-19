@@ -39,7 +39,7 @@ const displayMembers = (members) => {
     members.forEach(member => {
         
         const card = document.createElement('section'); //Tis where all te info goes
-        const name = document.createElement('h3');
+        const name = document.createElement('h2');
         const address = document.createElement('p');
         const phoneNumber = document.createElement('p');
         const websiteUrl = document.createElement('a');
