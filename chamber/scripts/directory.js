@@ -57,6 +57,7 @@ const displayMembers = (members) => {
         image.setAttribute('alt', `${name}'s picture`);
         image.setAttribute('loading', 'lazy');
         image.setAttribute('width', '200');
+        image.setAttribute('height', '200');
         membershipLevel.setAttribute('class', 'membershipLevel');
         websiteUrl.setAttribute('href', `${member.website}`);
 
