@@ -165,6 +165,8 @@ h2{
     height: auto;
 }
 
+
+
 #cards{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(23em, 1fr));
