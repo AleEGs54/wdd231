@@ -263,3 +263,88 @@ footer{
     width: 6.25em;
     height: 6.25em;
 }
+
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width: 52em) {
+
+
+    /* HEADER */
+    
+        /* Destroying the hamburguer button */
+    
+        header{
+            display: flex;
+            flex-direction: row;
+            justify-content:space-between;
+            height: 5em;
+            /* flex: 1 1 100%; */
+        }
+    
+        .logo-picture{
+            justify-self: start;
+        }
+    
+        .buttons-box{
+            /* buttons box is direct son of the flex */
+            order: 1;
+        }
+    
+        #menu{
+            display: none;
+        }
+    
+    
+        nav{
+            display: flex;
+            flex-direction: row;
+            justify-content: end;
+            order: 0;
+            width: 100%;
+            padding: 0 4rem;
+        }
+    
+        ul.link-navigator{
+            flex-direction: row;
+        }
+    
+        ul.link-navigator li{
+            background-color: #fff;
+        }
+        li a{
+            color: var(--text-color);
+            transition: color 0.25s ease;
+            width: 100%;
+            padding: 0 1.5em;
+            font-weight: 500;
+        }
+    
+        li a:hover{
+            color: #F3BE3C;
+        }
+        ul.link-navigator li:hover{
+            background-color: #fff;
+            text-decoration: underline;
+            text-decoration-color: var(--accent-color);
+        }
+    
+        /* MAIN */
+    
+        #cards.list .card{
+    
+            justify-content: space-between;
+        }
+    
+        #cards{
+            grid-template-columns: repeat(auto-fit, minmax(23em, 1fr));
+        }
+    
+        #cards.card img{
+            width: 12.5em;
+            height: auto;
+        }
+    
+        
+    
+    }
