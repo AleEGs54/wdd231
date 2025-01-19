@@ -1,11 +1,17 @@
 * {
     --primary-color: #1C2C4B;
     --secondary-color: #1C75BB;
-    --background-color: #fff ;
+    --background-color: #959595 ;
     --accent-color: #F3BE3C;
     --text-color: #414042;
+    --alternative-text-color: #fff;
+    --footer-color: #dadada;
 
     font-family: 'Fira Sans', sans-serif;
+}
+
+html{
+    box-sizing: border-box;
 }
 
 /* Small views as base for this project */
@@ -17,7 +23,6 @@ header{
     color: var(--text-color);
     /* background-color: var(--background-color); */
     /* background-color: #F3BE3C; */
-    height: auto;
 
     /* position */
     display: grid;
@@ -44,27 +49,46 @@ nav.open{
     grid-template-rows: 1fr;
 }
 
-
-
-/* end */
+/* end open */
 
 ul.link-navigator{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: center; /*This keeps the ul big box in the center, but not the words*/
     /* Hiddes the nav while is closed */
     overflow: hidden;
+
 }
+
 
 li a{
     text-decoration: none;
-    color: var(--text-color);
+    color: var(--alternative-text-color);
+    width: 100%;
+    height: 100%;
+    display: block;
+
+    padding: 1em;
 }
 
-ul.link-navigator li{
+ul li{
     list-style-type: none;
+    background-color: var(--text-color);
+    width: 100%;
+    text-align: end;
 }
+
+/* Change the color when hover */
+ul.link-navigator li:hover{
+    background-color: var(--accent-color);
+}
+
+li a:hover{
+    color: var(--text-color);
+
+}
+/* end hover */
 
 .buttons-box{
     display: flex;
@@ -86,11 +110,124 @@ ul.link-navigator li{
     line-height: 10px;
 }
 
+ul.link-navigator a.active-link{
+    /* current page open */
+    text-decoration: underline;
+    
+}
+
 #menu:hover, #toggle-bg-color:hover{
+    /* adding a pointer to the buttons when hover */
     cursor: pointer;
 }
 
 
 
 /* MAIN */
+
+main{
+    /* same technique as the temple gallery */
+    max-width: 75em;
+    margin: 0 auto;
+} 
+
+.views-buttons{
+    display: flex;
+    justify-content: center;
+    margin: 2em 0;
+}
+
+.views-buttons button{
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    padding: 0.5em 1em;
+    border: 0;
+    margin: 0 0.5em;
+    cursor: pointer;
+    width: 10em;
+}
+
+.views-buttons button:hover{
+    background-color: var(--secondary-color);
+}
+
+#cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(23em, 1fr));
+    gap: 1em;
+    justify-items: center;
+    align-items: center;
+    margin: 2em 2em;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.5);
+    color: var(--text-color);
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.card a{
+    text-decoration: none;
+
+
+}
+
+/* List view */
+#cards.list{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 0;
+}
+
+#cards.list .card{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1em;
+    color: var(--text-color);
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    gap: 1em;
+    box-shadow: none;
+    color: var(--text-color);
+}
+
+.list .card:nth-child(even){
+    background-color: var(--accent-color);
+}
+
+.list img, .list .membershipLevel{
+    display: none;
+}
+
+
+
 /* FOOTER */
+
+footer{
+    display: flex;
+    flex-direction: column;
+
+    /* style */
+    background-color: var(--footer-color);
+    color: var(--text-color);
+    padding: 1em ;
+}
+
+.links-footer-wrap{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
