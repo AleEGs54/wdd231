@@ -142,7 +142,7 @@ main{
     margin: 0 auto;
 } 
 
-main h1, main p{
+main h1, main .find-business-paragraph{
     text-align: center;
     color: #000;
     background-color: var(--alternative-text-color);
