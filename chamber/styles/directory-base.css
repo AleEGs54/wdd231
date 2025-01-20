@@ -41,6 +41,7 @@ header{
     align-items: center;
 }
 
+
 #logo-picture{
     margin: 0 1rem;
 }
@@ -143,7 +144,9 @@ main{
 
 main h1, main p{
     text-align: center;
-    color: var(--text-color);
+    color: #000;
+    background-color: var(--alternative-text-color);
+    /* I was forced to do this */
 }
 
 
