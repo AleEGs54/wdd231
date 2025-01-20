@@ -35,6 +35,10 @@ async function getMemberData(url) {
 }
 
 const displayMembers = (members) => {
+    //Delete the cards that are already there
+    cards.innerHTML = '';
+
+
     // member card builder here
     members.forEach(member => {
         
