@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chaber of Commerce - Directory</title>
+    <meta name="description"
+        content="Welcome to the chamber of Commerce webpage. In this page you will find more about businesses in the area.">
+    <meta name="author" content="Alejandro Esteves">
+    <!-- Open Graph properties -->
+    <meta property="og:title" content="WDD 231 - Web Frontend Development I - Alejandro Esteves">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://media.istockphoto.com/id/171299542/photo/a-chamber-of-commerce-grave-style-sign.jpg?s=612x612&w=0&k=20&c=YtxMrhuG8-2vYP1sNPR72WZgdbgIcpU3IdLcVrImfz0=">
+    <meta property="og:url" content="https://aleegs54.github.io/wdd231/chamber/directory.html">
+    <!-- Fonts -->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,400;0,500;1,500&display=swap" rel="stylesheet"> -->
+
+    <!-- Links -->
+    <link rel="stylesheet" href="styles/directory-base.css">
+    <link rel="stylesheet" href="styles/directory-large.css">
+    <link rel="icon" href="images/favicon.ico">
+    <script src="scripts/directory.js" defer></script> 
+</head>
+<body>
+    <header>
+        <img id="logo-picture" src="images/chamber-of-commerce-miraflores-logo.webp" alt="Chamber of Commerce Miraflores Logo" width="180" height="180" fetchpriority=high>
+        <span class="buttons-box">
+            <button aria-label="toggle background color" id="toggle-bg-color">
+                <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#e8eaed"><path d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm26.67-67.67q131-11.66 218.83-105.5Q813.33-347 813.33-480T725.5-706.83q-87.83-93.84-218.83-105.5v664.66Z"/></svg>
+            </button>
+            <button id="menu">&#9776;</button>
+        </span>
+        <nav id="animateme">
+            <ul class="link-navigator">
+                <li><a href="#">Home</a></li>
+                <li><a class="active-link" href="#">Directory</a></li>
+                <li><a href="#">Join</a></li>
+                <li><a href="#">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+     
+    </main>
+    <footer>
+        <div class="page-info-footer-wrap">
+            <p><strong>Miraflores Chamber of Commerce</strong></p>
+            <p>Larco Avenue 730, Office 503, Miraflores </p>
+            <p>chambercomercemiraflores@gmail.com</p>
+            <p>(+51)-1-920-8735</p>
+        </div>
+        <div class="links-footer-wrap">
+            <a href="youtube.com"><img src="images/yotube_logo.webp" alt="Youtube logo" width="100" height="100" loading="lazy"></a>
+            <a href="x.com"><img src="images/twitter_logo.webp" alt="Twitter logo" width="100" loading="lazy"></a>
+            <a href="linkedin.com"><img src="images/linkedIn_logo.webp" alt="LinkedIn logo" width="100"  height="100" loading="lazy"></a>
+        </div>
+        <div class="course-info-footer-wrap">
+            <p>WDD231 Class Project</p>
+            <p>Alejandro Esteves</p>
+            <p>©️<span id="currentyear"></span> Miraflores, Chamber of Commerce</p>
+            <p class="lastModified" id="lastModified">lastModified</p>
+        </div>
+    </footer>
+</body>
+</html>  
