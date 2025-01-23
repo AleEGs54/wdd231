@@ -1,4 +1,25 @@
+/* Small views as base for this project */
 
+* {
+    --primary-color: #1C2C4B;
+    --secondary-color: #1C75BB;
+    --background-color: #959595 ;
+    --accent-color: #F3BE3C;
+    --text-color: #414042;
+    --alternative-text-color: #fff;
+    --footer-color: #dadada;
+
+    font-family: 'Fira Sans', sans-serif;
+
+    /* Basic reset */
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  
+  
+
+}
 
 /* MAIN */
 
