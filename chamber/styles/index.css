@@ -1,0 +1,107 @@
+
+* {
+    --primary-color: #1C2C4B;
+    --secondary-color: #1C75BB;
+    --background-color: #959595 ;
+    --accent-color: #F3BE3C;
+    --text-color: #414042;
+    --alternative-text-color: #fff;
+    --footer-color: #dadada;
+
+    font-family: 'Fira Sans', sans-serif;
+
+}
+
+/* MAIN */
+
+/* Hero */
+
+.hero {
+    background-color: aquamarine;
+    height: 25em;
+    /* This margin applies to the whole hero */
+    margin: 0; /*Nothing for now...*/
+}
+
+/* home-cards */
+
+#home{
+    /* This margin applies to the whole home area */
+    margin: .5em;
+
+}
+
+.home-cards{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.h-card{
+    display: flex;
+    flex-direction: column;
+    background-color: beige;
+    border: 1px solid black;
+}
+
+.h-card h3 {
+    background-color: lightblue;
+    text-align: center;
+}
+
+/* Weather-info */
+#weather-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: .5em;
+}
+
+/* #weather-info section{
+    
+} */
+
+/* Forecast */
+.fore-weather-card{
+    display: flex;
+    flex-direction: column;
+    background-color: beige;
+    border: 1px solid black;
+}
+
+#forecast-info{
+    align-self: center;
+    margin: .5rem auto;
+
+}
+
+/* business-cards */
+
+.business-cards{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    /* This margin applies to the whole business area */
+    margin: 2.5em .5em 1em .5em;
+}
+
+.b-card{
+    display: flex;
+    flex-direction: column;
+    background-color:#F3BE3C;
+    border: 1px solid black;
+    border-radius: .5em;
+    padding: .5rem 0;
+}
+
+.business-card-header{
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+.info-business-card{
+    display: flex;
+    flex-direction: row;
+    margin: .5rem auto 0 auto;
+    align-items: center;
+}
