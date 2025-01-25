@@ -6,14 +6,14 @@ function displayForecastData(forecastData){
     forecastContainer.innerHTML = ""; //Clear the container
 
     const forecastList = forecastData.list;
-    console.log(forecastList);
+    // console.log(forecastList);
 
     //Each 8 items a new day is showed, so we can divide the list by 8 to get the forecast for each day
     const forecastDaily= forecastList.filter((item, index) => index % 8 === 0);
 
     //Now, we use only the first 3 days
     const forecast = forecastDaily.slice(0, 3);
-    console.log(forecast);
+    // console.log(forecast);
 
     //Iterate over each day and display the data
     forecast.forEach(item => {
