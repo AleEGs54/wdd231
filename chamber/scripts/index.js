@@ -32,7 +32,7 @@ async function getForecastData(url) {
 
     displayForecastData(data);
 
-}
+}  
 
 getForecastData(urlForecast);
 
