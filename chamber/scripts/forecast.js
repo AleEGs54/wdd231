@@ -16,10 +16,12 @@ function displayForecastData(forecastData){
     //Iterate over each day and display the data
     forecast.forEach(item => {
         const aForecast = document.createElement("p");
-        const day = new Date(item.dt * 1000).toLocaleDateString('en-US', { weekday: 'long' });
+
+        //item.dt_txt is the date and time of the forecast in the format "YYYY-MM-DD HH:MM:SS"
+        const day = new Date(item.dt_txt).toLocaleDateString('en-US', { weekday: 'long' });
 
         //Inseting the info
-        aForecast.innerHTML = `<strong>${day}</strong> ${item.main.temp} °C`;
+        aForecast.innerHTML = `<strong>${day}</strong> ${Math.floor(item.main.temp)} °C`;
 
         //Appending the info to the container
         forecastContainer.appendChild(aForecast);

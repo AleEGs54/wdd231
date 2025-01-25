@@ -31,10 +31,10 @@ function displayWeatherData(weatherData) {
     const weatherDescriptionElement = document.createElement('p');
 
     //Inserting the info
-    temperatureElement.innerHTML = `<strong >Temperature: </strong> ${temperature} °C`;
+    temperatureElement.innerHTML = `<strong >Temperature: </strong> ${Math.floor(temperature)} °C`;
     weatherDescriptionElement.innerHTML = `<strong >Description: </strong> ${weatherDescription}`;
-    highElement.innerHTML = `<strong >High: </strong> ${high} °C`;
-    lowElement.innerHTML = `<strong >Low: </strong> ${low} °C`;
+    highElement.innerHTML = `<strong >High: </strong> ${Math.floor(high)} °C`;
+    lowElement.innerHTML = `<strong >Low: </strong> ${Math.floor(low)} °C`;
     humidityElement.innerHTML = `<strong >Humidity: </strong> ${humidity} %`;
     sunriseElement.innerHTML = `<strong >Sunrise: </strong> ${sunrise}`;
     sunsetElement.innerHTML = `<strong >Sunset: </strong> ${sunset}`;
