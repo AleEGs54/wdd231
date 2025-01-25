@@ -59,9 +59,7 @@
 }
 
 
-/* #weather-info img{
-    object-fit: contain;
-} */
+
 /* #weather-info section{
     
 } */
@@ -126,7 +124,10 @@
 .gold-member {
 
     /* background: linear-gradient(to right, #BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C); */
-    background: linear-gradient(to right, #FFD700, #D4AF37);
+    border: 10px solid #FFD700;
+    /* border-image-source: linear-gradient(to right, #FFD700, #D4AF37); */
+    /* border-image-slice: 1; */
+    
   
   }
   
@@ -134,7 +135,9 @@
   
   .silver-member {
   
-    background: linear-gradient(to right, #C0C0C0, #808080);
+    border: 10px solid #C0C0C0;
+    /* border-image-source: linear-gradient(to right, #C0C0C0, #808080); */
+    /* border-image-slice: 1; */
 
   
   }
