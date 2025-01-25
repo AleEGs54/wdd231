@@ -43,7 +43,7 @@ function displayWeatherData(weatherData) {
     humidityElement.innerHTML = `<strong >Humidity: </strong> ${humidity} %`;
     sunriseElement.innerHTML = `<strong >Sunrise: </strong> ${sunrise}`;
     sunsetElement.innerHTML = `<strong >Sunset: </strong> ${sunset}`;
-    iconElement.setAttribute('src', `https://openweathermap.org/img/wn/${weatherData.weather[0].icon}@2x.png`);
+    iconElement.setAttribute('src', `https://openweathermap.org/img/wn/${weatherData.weather[0].icon}@4x.png`);
     iconElement.setAttribute('alt', weatherData.weather[0].description);
     iconElement.setAttribute('width', '100px');
     iconElement.setAttribute('height', '100px');
