@@ -46,8 +46,8 @@ function displayMembers(members){
         image.setAttribute('src', `${member.icon}`);
         image.setAttribute('alt', `${name}'s picture`);
         image.setAttribute('loading', 'lazy');
-        image.setAttribute('width', '160');
-        image.setAttribute('height', '150');
+        image.setAttribute('width', '125');
+        image.setAttribute('height', '125');
         membershipLevel.setAttribute('class', 'membership-level');
         websiteUrl.setAttribute('href', `${member.website}`);
 
