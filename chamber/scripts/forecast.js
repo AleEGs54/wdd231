@@ -3,6 +3,8 @@ const forecastContainer = document.getElementById("forecast-info"); //container
 function displayForecastData(forecastData){
     //Get the data from the API divided in parts
 
+    forecastContainer.innerHTML = ""; //Clear the container
+
     const forecastList = forecastData.list;
     console.log(forecastList);
 

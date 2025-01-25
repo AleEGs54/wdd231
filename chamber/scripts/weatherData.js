@@ -2,6 +2,11 @@
 const weatherInfo = document.querySelector('#weather-info');
 
 function displayWeatherData(weatherData) {
+
+    //Clearing the container
+    weatherInfo.innerHTML = "";
+
+
     const temperature = weatherData.main.temp; //75f 
     const weatherDescription = weatherData.weather[0].description;
     const high = weatherData.main.temp_max; 

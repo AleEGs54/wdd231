@@ -1,9 +1,11 @@
 import displayWeatherData from "./weatherData.js";
 import displayForecastData from "./forecast.js";
+import displayMembers from "./members.js";
 //Home 
 
 const urlWeather = 'https://api.openweathermap.org/data/2.5/weather?lat=-12.13&lon=-77.03&units=metric&appid=92c8ca0ac089a625e28705389924fc24';
 const urlForecast = 'https://api.openweathermap.org/data/2.5/forecast?lat=-12.13&lon=-77.03&units=metric&appid=92c8ca0ac089a625e28705389924fc24';
+const urlMembers = 'data/members.json';
 
 const cards = document.querySelector('.home-cards');
 
@@ -32,7 +34,21 @@ async function getForecastData(url) {
 
 }
 
-getForecastData(urlForecast)
+getForecastData(urlForecast);
+
+
+// fetching info from data json file
+
+async function getMemberData(url) {
+    const response = await fetch(url);
+    const data = await response.json();
+
+    displayMembers(data.members);
+    
+    // console.table(data.members);
+}
+
+getMemberData(urlMembers)
 
 
 
