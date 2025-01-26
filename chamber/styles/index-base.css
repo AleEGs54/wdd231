@@ -201,7 +201,7 @@
 .gold-member {
 
     /* background: linear-gradient(to right, #BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C); */
-    border: .2rem solid #FFD700;
+    border: 2px solid #FFD700;
     /* border-image-source: linear-gradient(to right, #FFD700, #D4AF37); */
     /* border-image-slice: 1; */
     
@@ -212,7 +212,7 @@
   
   .silver-member {
   
-    border: .2rem solid #C0C0C0;
+    border: 2px solid #C0C0C0;
     /* border-image-source: linear-gradient(to right, #C0C0C0, #808080); */
     /* border-image-slice: 1; */
 
