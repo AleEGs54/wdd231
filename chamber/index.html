@@ -21,9 +21,10 @@
 
     <!-- Links -->
     <link rel="stylesheet" href="styles/common-layout.css">
-    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/index-base.css">
+    <link rel="stylesheet" href="styles/index-large.css">
     <link rel="icon" href="images/favicon.ico">
-    <script src="scripts/index.js" type="module" defer></script>
+    <script src="scripts/index.js" type="module"></script>
 </head>
 
 <body>
@@ -51,98 +52,102 @@
     </header>
     <main>
         <div class="hero">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit pariatur delectus perspiciatis id placeat nobis
-            sint corporis eius eaque aspernatur? Debitis sequi nostrum rem placeat est sit, esse culpa praesentium.
+            <img src="images/hero-desktop.webp" alt="">
+            <div class="hero-text">
+                <h1>Welcome to Miraflores: Chamber of Commerce</h1>
+                <p>Empowering Local Business</p>
+                <div id="call-to-action"><a href="">
+                    
+                        <p>BECOME PART OF THE COMMUNITY</p>
+                        <p>Join Miraflores Chamber Of Commerce</p>
+                        <p>Member Aplication</p>
+                </a>
+                </div>
+            </div>
         </div>
         
-        <div id="home">
-
-            <h2>Home</h2>
-            <section class="home-cards">
-                <section class="event-card h-card">
-                    <h3>Events</h3>
-                    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, possimus deleniti
-                        quibusdam
-                        voluptates, quam ut consectetur atque nemo ullam delectus tempora veniam id a unde omnis
-                        explicabo
-                        officiis consequuntur placeat.</div>
-                </section>
-                <section class="curr-weather-card h-card">
-                    <h3>Current Weather</h3>
-
-                    <div id="weather-info">
-                        
-                            <!-- In this box, the following information will be displayed soon: temperature, weather conditions, and other relevant weather details.
-                       
-                            <p>Temperature: 75°F</p>
-                            <p>Conditions: Partly Cloudy</p>
-                            <p>Humidity: 60%</p>
-                            <p>Wind: 10 mph NE</p> -->
-                        <!-- Image and weather info comes here -->
+        
+        <section id="hb-container">
+            <div id="home">
+                <h2>Home</h2>
+                <div class="home-cards">
+                    <section class="event-card h-card">
+                        <h3>Events</h3>
+                        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, possimus deleniti
+                            quibusdam
+                            voluptates, quam ut consectetur atque nemo ullam delectus tempora veniam id a unde omnis
+                            explicabo
+                            officiis consequuntur placeat.</div>
+                    </section>
+                    <section class="curr-weather-card h-card">
+                        <h3>Current Weather</h3>
+                        <div id="weather-info">
+            
+                                <!-- In this box, the following information will be displayed soon: temperature, weather conditions, and other relevant weather details.
+            
+                                <p>Temperature: 75°F</p>
+                                <p>Conditions: Partly Cloudy</p>
+                                <p>Humidity: 60%</p>
+                                <p>Wind: 10 mph NE</p> -->
+                            <!-- Image and weather info comes here -->
+                        </div>
+                    </section>
+                    <section class="fore-weather-card h-card">
+                        <h3>Weather Forecast</h3>
+                        <div id="forecast-info">
+                            <!-- Tomorrow's forecast: High of 80°F, Low of 65°F, Partly Cloudy
+                            The day after tomorrow's forecast: High of 82°F, Low of 66°F, Mostly Sunny
+                            The day after the day after tomorrow's forecast: High of 78°F, Low of 64°F, Partly Cloudy -->
+                            <!-- Image and forecast info comes here -->
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <div class="business-cards">
+                <section class="b-card silver-member">
+                    <div class="business-card-header">
+                        <h3>Business Name</h3>
+                        <p class="tag-line">Business Tag Line</p>
+                    </div>
+                    <div class="info-business-card">
+                        <img src="#" alt="Business Logo" class="u-photo" width="100" height="100">
+                        <div>
+                            <p><strong>EMAIL: </strong>info@email.com</p>
+                            <p><strong>PHONE: </strong>555-555-5555</p>
+                            <p><strong>URL: </strong><a href="#">mybusiness.com</a></p>
+                        </div>
                     </div>
                 </section>
-                <section class="fore-weather-card h-card">
-                    <h3>Weather Forecast</h3>
-                    <div id="forecast-info">
-                        <!-- Tomorrow's forecast: High of 80°F, Low of 65°F, Partly Cloudy
-                        The day after tomorrow's forecast: High of 82°F, Low of 66°F, Mostly Sunny
-                        The day after the day after tomorrow's forecast: High of 78°F, Low of 64°F, Partly Cloudy -->
-                        <!-- Image and forecast info comes here -->
+                <section class="b-card gold-member">
+                    <div class="business-card-header">
+                        <h3>Business Name</h3>
+                        <p class="p-name">Business Tag Line</p>
+                    </div>
+                    <div class="info-business-card">
+                        <img src="#" alt="Business Logo" class="u-photo" width="100" height="100">
+                        <div>
+                            <p><strong>EMAIL: </strong>info@email.com</p>
+                            <p><strong>PHONE: </strong>555-555-5555</p>
+                            <p><strong>URL: </strong><a href="#">mybusiness.com</a></p>
+                        </div>
                     </div>
                 </section>
-            </section>
-        </div>
-        <div class="business-cards">
-            <section class="b-card silver-member">
-
-                <span class="business-card-header">
-                    <h3>Business Name</h3>
-                    <p class="tag-line">Business Tag Line</p>
-                </span>
-
-                <span class="info-business-card">
-                    <img src="#" alt="Business Logo" class="u-photo" width="100" height="100">
-                    <div>
-                        <p><strong>EMAIL: </strong>info@email.com</p>
-                        <p><strong>PHONE: </strong>555-555-5555</p>
-                        <p><strong>URL: </strong><a href="#">mybusiness.com</a></p>
+                <section class="b-card silver-member">
+                    <div class="business-card-header">
+                        <h3>Business Name</h3>
+                        <p class="p-name">Business Tag Line</p>
                     </div>
-                </span>
-            </section>
-            <section class="b-card gold-member">
-
-                <span class="business-card-header">
-                    <h3>Business Name</h3>
-                    <p class="p-name">Business Tag Line</p>
-                </span>
-
-                <span class="info-business-card">
-                    <img src="#" alt="Business Logo" class="u-photo" width="100" height="100">
-                    <div>
-                        <p><strong>EMAIL: </strong>info@email.com</p>
-                        <p><strong>PHONE: </strong>555-555-5555</p>
-                        <p><strong>URL: </strong><a href="#">mybusiness.com</a></p>
+                    <div class="info-business-card">
+                        <img src="#" alt="Business Logo" class="u-photo" width="100" height="100">
+                        <div>
+                            <p><strong>EMAIL: </strong>info@email.com</p>
+                            <p><strong>PHONE: </strong>555-555-5555</p>
+                            <p><strong>URL: </strong><a href="#">mybusiness.com</a></p>
+                        </div>
                     </div>
-                </span>
-            </section>
-
-            <section class="b-card silver-member">
-
-                <span class="business-card-header">
-                    <h3>Business Name</h3>
-                    <p class="p-name">Business Tag Line</p>
-                </span>
-
-                <span class="info-business-card">
-                    <img src="#" alt="Business Logo" class="u-photo" width="100" height="100">
-                    <div>
-                        <p><strong>EMAIL: </strong>info@email.com</p>
-                        <p><strong>PHONE: </strong>555-555-5555</p>
-                        <p><strong>URL: </strong><a href="#">mybusiness.com</a></p>
-                    </div>
-                </span>
-            </section>
-        </div>
+                </section>
+            </div>
+        </section>
     </main>
     <footer>
         <div class="page-info-footer-wrap">

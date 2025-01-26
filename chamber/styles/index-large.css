@@ -1,0 +1,70 @@
+@media screen and (min-width: 600px) {
+
+    #call-to-action{
+        width: 30em;
+        margin: 10rem auto;
+    }
+
+    /* Container of home and business */
+    #hb-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 2em 0;
+    }
+
+    /* home cards */
+    #home{
+        margin: 2em;
+    }
+
+    #home h2{
+        text-align: start;
+        
+    }
+
+    .home-cards{
+        /* display: grid; */
+        flex-direction: row;
+        margin: .5rem 0;
+        /* grid-template-columns: 2fr repeat(2, 1fr); */
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .h-card{
+        max-width: 40em;
+        min-width: 17.5em;
+    }
+
+    .h-card div{
+        margin: 1em;
+    }
+
+    #forecast-info{
+        display: flex;
+        padding: 1em;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        width: 100%;
+        height: 100%;
+        gap: 1em;
+    }
+
+    /* business cards */
+
+    .business-cards{
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 1em ;
+        justify-content: center;
+        max-width: 100%;
+    }
+
+    .b-card{
+        max-width: 25em;
+    }
+    
+}
