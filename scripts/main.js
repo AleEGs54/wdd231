@@ -148,7 +148,34 @@ function createCourseCard(filteredcourses){
         let coursesBlock = document.querySelector('.courses-block');
         coursesBlock.appendChild(card);
 
+        //Option to display de modal with more info about the course
+        card.addEventListener('click', () => {
+            displayModal(aCourse);
+        });
+
     });
+}
+
+//Display de modal
+const dialog = document.querySelector("dialog");
+
+function displayModal(course){
+    dialog.innerHTML = '';
+    dialog.innerHTML = `
+    <button id='closeModal'>❌</button>
+    <h2>${course.subject} ${course.number}</h2>
+    <h3>${course.title}</h3>
+    <p><strong>Credits</strong>: ${course.credits}</p>
+    <p><strong>Description<strong/>: ${course.description}</p>
+    <p><strong>Certificate</strong>: ${course.certificate}</p>
+    <p><strong>Technologies</strong>: ${course.technology}</p>`
+
+    dialog.showModal();
+
+    closeModal.addEventListener("click", () => {
+        dialog.close();
+    });
+    
 }
 
 //Function to display the total amount of credits earned by completing the courses in display
@@ -161,6 +188,12 @@ function displayTotalCredits(filteredArray)
     let totalCredits = filteredArray.reduce((accumulator, course) => accumulator + course.credits, 0);
     creditDisplayer.textContent = `${totalCredits}`;
 };
+
+
+
+
+
+
 
 // Select the DOM elements for output
 const currentyear = document.querySelector("#currentyear");

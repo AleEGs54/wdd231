@@ -175,6 +175,35 @@ h2 {
 
 }
 
+dialog{
+    /* Positioning */
+    width: 80%;
+    height: 80%;
+    max-width: 50em;
+    max-height: 35em;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* Styling */
+    border: 1px solid rgb(0, 0, 0 / 0.1);
+    border-radius: .25rem;
+    background-color: #fff;
+    box-shadow: 0 0 3rem #777;
+}
+
+::backdrop{
+    background-color: rgb(0, 0, 0 /0.5);
+}
+
+dialog button{
+    position: absolute;
+    top: 23px;
+    right: 23px;
+    padding: .5rem 1rem;
+    border: 1px solid rgb(0, 0, 0 /0.1);
+}
+
 .courses-block{
     margin-top: 0;
     display: grid;
@@ -190,6 +219,7 @@ h2 {
     text-align: center;
     background-color: rgb(231, 237, 239);
     font-weight: bold;
+    cursor: pointer;
 }
 
 .course-completed{
