@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animaciones Dinámicas</title>
+  <style>
+    .caja {
+      width: 100px;
+      height: 100px;
+      background-color: crimson;
+    }
+
+    @keyframes girar {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+  </style>
+</head>
+<body>
+
+  <button id="start">Iniciar</button>
+  <button id="stop">Detener</button>
+  <div class="caja" id="caja"></div>
+
+  <script>
+    const caja = document.getElementById('caja');
+    const startButton = document.getElementById('start');
+    const stopButton = document.getElementById('stop');
+
+    startButton.addEventListener('click', () => {
+      caja.style.animation = 'girar 2s linear infinite';
+    });
+
+    stopButton.addEventListener('click', () => {
+      caja.style.animation = '';
+    });
+  </script>
+
+</body>
+</html>

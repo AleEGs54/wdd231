@@ -153,6 +153,13 @@ function createCourseCard(filteredcourses){
             displayModal(aCourse);
         });
 
+//         // animating the dialog window
+//         card.addEventListener('click', () => {
+//         //add the class jumpIn
+//             dialog.classList.remove('jumpOut');
+//             dialog.classList.add('jumpIn');
+// })
+
     });
 }
 
@@ -170,10 +177,16 @@ function displayModal(course){
     <p><strong>Certificate</strong>: ${course.certificate}</p>
     <p><strong>Technologies</strong>: ${course.technology}</p>`
 
+    //add the class jumpIn
+    dialog.classList.add('jumpIn');
+    
     dialog.showModal();
-
+    
     closeModal.addEventListener("click", () => {
+
+        
         dialog.close();
+
     });
     
 }

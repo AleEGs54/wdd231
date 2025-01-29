@@ -190,6 +190,7 @@ dialog{
     border-radius: .25rem;
     background-color: #fff;
     box-shadow: 0 0 3rem #777;
+    /* animation-name: jumpIn; */
 }
 
 ::backdrop{
@@ -203,6 +204,24 @@ dialog button{
     padding: .5rem 1rem;
     border: 1px solid rgb(0, 0, 0 /0.1);
 }
+
+/* dialog animation */
+dialog.jumpIn{
+
+    animation: jumpIn 0.25s linear normal forwards;
+}
+
+
+@keyframes jumpIn{
+    from {
+        scale: 0%;
+    }
+    to {
+        scale: 100%;
+    }
+}
+
+/* end dialog animation */
 
 .courses-block{
     margin-top: 0;
