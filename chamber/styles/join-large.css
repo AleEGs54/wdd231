@@ -68,40 +68,7 @@
     }
 
     /* reserved for big screens */
- section p:hover{
-    animation: expand .2s linear 1 forwards;
-}
-
-section p{
-    animation: contract .2s linear 1 forwards;
-}
-
-@keyframes expand{
-    from{
-        width: 10em;
-        height: auto;
-        background-color: #00000081;;
-    }
-    to{
-        width: 11em;
-        height: auto;
-        background-color: #000;
-    }
-} 
-
-@keyframes contract{
-    from{
-        width: 11em;
-        height: auto;
-        background-color: #000;
-    }
-    to{
-        width: 10em;
-        height: auto;
-        background-color: #00000081;
-    }
-} 
-
+ 
 
 }
 
