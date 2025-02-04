@@ -1,0 +1,59 @@
+{
+    "membershipData": [
+        {
+            "mName": "Gold Membership",
+            "mType": "gold",
+            "price": 500,
+            "about": "Ideal for businesses seeking maximum visibility and exclusive benefits.",
+            "features": [
+                "Featured advertising on the homepage",
+                "Mentions in newsletters and social media",
+                "Free access to VIP networking events",
+                "30% discount on event sponsorships",
+                "Advanced business training sessions",
+                "Priority exposure in trade shows and media opportunities",
+                "Personalized assistance for business growth strategies"
+            ]
+        },
+        {
+            "mName": "Silver Membership",
+            "mType": "silver",
+            "price": 500,
+            "about": "Designed for growing businesses looking to strengthen their presence.",
+            "features": [
+                "Featured advertising on the homepage (secondary section)",
+                "Quarterly mentions in newsletters and social media",
+                "50% discount on VIP event access",
+                "20% discount on event sponsorships",
+                "Access to standard training sessions",
+                "Inclusion in the premium member directory"
+            ]
+        },
+        {
+            "mName": "Bronze Membership",
+            "mType": "bronze",
+            "price": 500,
+            "about": "Perfect for small businesses seeking visibility and support.",
+            "features": [
+                "Advertising in the featured members section",
+                "Biannual mentions in newsletters",
+                "10% discount on networking events",
+                "Access to basic training workshops",
+                "Standard listing in the member directory"
+            ]
+        },
+        {
+            "mName": "Non-Profit Membership",
+            "mType": "np",
+            "price": 500,
+            "about": "Exclusive for nonprofit organizations looking for support and visibility.",
+            "features": [
+                "Free or reduced registration fee",
+                "Inclusion in the member directory",
+                "Free access to select community events",
+                "Occasional promotion on social media and newsletters",
+                "Opportunities to collaborate on community impact events"
+            ]
+        }
+    ]
+}
