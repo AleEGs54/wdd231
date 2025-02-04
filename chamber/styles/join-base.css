@@ -65,7 +65,7 @@ input[type='email'],
 input[type='telephone'],
 textarea{
     
-    font-size: 1em;
+    font-size: 1.2em;
 }
 
 
@@ -121,22 +121,7 @@ section p{
     padding: .5em;
     width: 10em;
 }
-/* reserved for big screens */
-/* section p:hover{
-    animation: expand .2s linear 1 forwards;
 
-}
-
-@keyframes expand{
-    from{
-        width: 14em;
-        height: auto;
-    }
-    to{
-        width: 14.5em;
-        height: auto;
-    }
-} */
 
 section a, section a:visited{
     text-decoration: none;
@@ -188,6 +173,10 @@ dialog button{
     padding: .5rem 1rem;
     border: none;
     background-color: transparent;
+}
+
+dialog button:hover{
+    cursor: pointer;
 }
 
 ::backdrop{
