@@ -35,6 +35,8 @@
     .membership-cards {
         grid-row: 2/3;
         grid-column: 2/3;
+        justify-content: start;
+        margin: 8em 0;
     }
     
     .membership-cards section {
