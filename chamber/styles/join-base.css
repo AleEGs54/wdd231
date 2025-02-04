@@ -58,8 +58,16 @@ input[type='telephone']{
     height: 3em ;
     padding: .5em;
     border: 2px solid var(--accent-color);
-
 }
+
+input[type='text'],
+input[type='email'],
+input[type='telephone'],
+textarea{
+    
+    font-size: 1em;
+}
+
 
 textarea{
     height: 10em;
