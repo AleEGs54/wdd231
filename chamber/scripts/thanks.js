@@ -39,6 +39,7 @@ container.innerHTML = `
 <p>Applicant's title in the business: <strong>${showInfo("title")}</strong></p>
 <p>Type of Membership: <strong>${showInfo("membership-level").toUpperCase()}</strong></p>
 <p>Business description: <strong>${showInfo("description")}</strong></p>
+<p>Time of Submission: <strong>${showInfo("timestamp")}</strong></p>
 
 
 
