@@ -54,7 +54,7 @@ label{
 
 input[type='text'],
 input[type='email'],
-input[type='number']{
+input[type='tel']{
     height: 3em ;
     padding: .5em;
     border: 2px solid var(--accent-color);
@@ -62,7 +62,7 @@ input[type='number']{
 
 input[type='text'],
 input[type='email'],
-input[type='number'],
+input[type='tel'],
 textarea{
     border-radius: .2em;
     font-size: 1.2em;
