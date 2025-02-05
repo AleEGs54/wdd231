@@ -1,0 +1,21 @@
+/* Main */
+main{
+    margin: 1em ;
+}
+
+#user-info-container{
+    margin: 1em 0;
+}
+
+#user-info-container{
+    font-size: 1.2em;
+}
+
+.salutation{
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.salutation p{
+    margin: .5em 0 
+}

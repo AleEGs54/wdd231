@@ -36,8 +36,8 @@ container.innerHTML = `
 <p>E-mail <strong>${showInfo("email")}</strong></p>
 <h2>Business Info</h2>
 <p>Business/Organization's Name: <strong>${showInfo("Bname")}</strong></p>
-<p>Applicant's title in the business: <strong>${showInfo("title").toUpperCase()}</strong></p>
-<p>Type of Membership: <strong>${showInfo("membership-level")}</strong></p>
+<p>Applicant's title in the business: <strong>${showInfo("title")}</strong></p>
+<p>Type of Membership: <strong>${showInfo("membership-level").toUpperCase()}</strong></p>
 <p>Business description: <strong>${showInfo("description")}</strong></p>
 
 
