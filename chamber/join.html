@@ -74,23 +74,23 @@
 
                 <label>
                     Phone Number
-                    <input type="tel" id="telephone" name="telephone" title="Insert your phone number" required autocomplete="on" pattern="^[A-Za-z\- ]{7,}$">
-                    <small>Only letters, hyphens, and spaces. Minimum 7 characters.</small>
+                    <input type="tel" id="telephone" name="telephone" title="Insert your phone number" required autocomplete="on" >
                 </label>
             </fieldset>
-
+            
             <fieldset>
                 <legend>Business Information</legend>
-
-
+                
+                
                 <label>
                     Business/Organization's Name
                     <input type="text" name="Bname" title="Insert the name of your business or organization" required autocomplete="organization">
                 </label>
-
+                
                 <label>
                     Organizational Title
-                    <input type="text" name="title" title="What's your level at your organization?" autocomplete="organization-title">
+                    <input type="text" name="title" title="What's your level at your organization?" autocomplete="organization-title" pattern="^[A-Za-z\- ]{7,}$">
+                    <small>Only letters, hyphens, and spaces. Minimum 7 characters.</small>
                 </label>
 
                 <label class="radio-op">
