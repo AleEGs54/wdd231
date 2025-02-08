@@ -80,7 +80,7 @@
     gap: 2em;
 
     overflow: hidden;
-    max-height: 20em;
+    max-height: 22em;
     transition: max-height 0.5s ease-out;
 }
 
