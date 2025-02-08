@@ -85,7 +85,7 @@ li a{
     padding: 1em;
 }
 
-ul li{
+ul.link-navigator li{
     list-style-type: none;
     background-color: var(--text-color);
     width: 100%;

@@ -19,6 +19,7 @@ main{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-color: var(--accent-color);
 }
 
 /* Hero */
@@ -73,12 +74,15 @@ main{
 
 /* End hero */
 
+section{
+    background-color: #fff;
+}
+
 /* Demographics card */
 
 #demographics-cards{
     display: grid;
     /* max-height: 30em; */
-
 
 
     /* This aligns the containers */
@@ -97,6 +101,10 @@ main{
 
 .title{
     text-align: center;
+    margin: 1em 0 0 0;
+    font-size: 1.5em;
+    font-weight: bold;
+    background-color: var(--accent-color);
 }
 
 .demo-card{
@@ -112,12 +120,79 @@ main{
     margin: 0 auto;
 }
 
-/* .demo-card.hide{
-    display: none;
+/* Demographics card end */
+
+/* visit-cards */
+
+#visit-cards{
+    width: 100%;
 }
 
-.demo-card.unhide{
-    display: block;
-    
+.carousel {
+    width: 100%;
+    height: 30rem;
+    position: relative;
+}
 
-} */
+.carousel > ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.slide {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition:  200ms opacity ease-in-out;
+    transition-delay: 200ms;
+    text-align: center;
+}
+
+
+.slide > img{
+    display: block;
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.slide[data-active] {
+    opacity: 1;
+    z-index: 1;
+    transition-delay: 0ms;
+}
+
+
+.carousel-button{
+    position: absolute;
+    background: none;
+    border: none;
+    z-index: 5;
+    font-size: 4rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgba(255,255,255, .5);
+    cursor: pointer;
+    border-radius: .25rem;
+    padding: 0 .5rem;
+    background-color: rgba(0, 0, 0, .1);
+}
+
+.carousel-button:hover,
+.carousel-button:focus {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.carousel-button:focus{
+    outline: 1px solid black;
+}
+
+.carousel-button.prev{
+    left: 1rem;
+}
+.carousel-button.next{
+    right: 1rem;
+}
