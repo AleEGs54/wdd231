@@ -85,7 +85,6 @@
 }
 
 #demographics-cards.open{
-    grid-template-rows: 5em repeat(3, 1fr);
     max-height: 80em;
 }
 
