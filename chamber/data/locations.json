@@ -7,12 +7,8 @@
         "image": {
           "url": "images/parque-del-amor.webp",
           "alt": "Parque del Amor with El Beso sculpture and ocean view"
-        },
-        "entrance_fee": {
-          "amount": 0,
-          "currency": "PEN",
-          "notes": "Free public access"
         }
+       
       },
       {
         "name": "Larcomar Shopping Center",
@@ -21,12 +17,8 @@
         "image": {
           "url": "images/larcomar-cc.webp",
           "alt": "Larcomar Shopping Center cliff view"
-        },
-        "entrance_fee": {
-          "amount": 0,
-          "currency": "PEN",
-          "notes": "Free entry, parking fees apply"
         }
+       
       },
       {
         "name": "Huaca Pucllana",
@@ -35,12 +27,8 @@
         "image": {
           "url": "images/huaca-pucllana.webp",
           "alt": "Huaca Pucllana ancient pyramid"
-        },
-        "entrance_fee": {
-          "amount": 15,
-          "currency": "PEN",
-          "notes": "Includes guided tour. Students: 8 PEN, Children under 12: 4 PEN"
         }
+       
       },
       {
         "name": "Kennedy Park (Parque Kennedy)",
@@ -49,12 +37,8 @@
         "image": {
           "url": "images/parque-kennedy.webp",
           "alt": "Kennedy Park with cats and visitors"
-        },
-        "entrance_fee": {
-          "amount": 0,
-          "currency": "PEN",
-          "notes": "Free public access"
         }
+       
       },
       {
         "name": "Plaza Mayor (Plaza de Armas)",
@@ -63,12 +47,8 @@
         "image": {
           "url": "images/plaza-de-armas.webp",
           "alt": "Plaza Mayor with Government Palace"
-        },
-        "entrance_fee": {
-          "amount": 0,
-          "currency": "PEN",
-          "notes": "Plaza is free; Cathedral entry: 10 PEN"
         }
+       
       },
       {
         "name": "Circuito Mágico del Agua",
@@ -77,12 +57,8 @@
         "image": {
           "url": "images/circuito-magico-del-agua.webp",
           "alt": "Circuito Mágico del Agua night show"
-        },
-        "entrance_fee": {
-          "amount": 4,
-          "currency": "PEN",
-          "notes": "Children under 5: Free. Special prices for seniors and students"
         }
+       
       },
       {
         "name": "Museo Larco",
@@ -91,12 +67,8 @@
         "image": {
           "url": "images/museo-larco.webp",
           "alt": "Museo Larco exterior and gardens"
-        },
-        "entrance_fee": {
-          "amount": 35,
-          "currency": "PEN",
-          "notes": "Students: 30 PEN. Children under 8: Free. Includes access to storage collection"
         }
+       
       },
       {
         "name": "Barranco Art District",
@@ -105,23 +77,8 @@
         "image": {
           "url": "images/barranco.webp",
           "alt": "Barranco Bridge of Sighs"
-        },
-        "entrance_fee": {
-          "amount": 0,
-          "currency": "PEN",
-          "notes": "District is free to explore; museum fees vary (MATE: 30 PEN, MAC: 10 PEN)"
         }
+       
       }
-    ],
-    "metadata": {
-      "last_updated": "2025-02-08",
-      "currency": "PEN",
-      "timezone": "America/Lima",
-      "note": "Opening hours may vary by season and due to local events or holidays. It's recommended to check current operating hours before visiting.",
-      "exchange_rate": {
-        "USD_to_PEN": "3.70",
-        "EUR_to_PEN": "4.00",
-        "last_updated": "2025-02-08"
-      }
-    }
+    ]
   }
