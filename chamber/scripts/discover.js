@@ -1,5 +1,6 @@
 //imports
 import createLocationsCard from "./locations.js";
+import createHistoricalPlacesCards from "./historicalPlaces.js";
 
 
 
@@ -13,7 +14,23 @@ hamButton.addEventListener('click', function () {
 
 });
 
-//get json info
+
+
+//get json info about the cards
+const historicalPlaces = 'data/historical-sites.json';
+
+async function getHistoricalData(url) {
+    const response = await fetch(url);
+    const data = await response.json();
+
+    createHistoricalPlacesCards(data.historical_sites)
+    
+
+}
+
+getHistoricalData(historicalPlaces);
+
+//get json info about the cards
 const locations = 'data/locations.json';
 
 async function getLocationsData(url) {
@@ -21,7 +38,7 @@ async function getLocationsData(url) {
     const data = await response.json();
 
     createLocationsCard(data.locations)
-    
+
 
 }
 
@@ -38,10 +55,10 @@ demButton.addEventListener('click', () => {
 
 
     if (demButton.classList.contains('open')) {
-        demButton.innerHTML = `Activo`
+        demButton.innerHTML = `&#8593;`
     }
     else {
-        demButton.innerHTML = `Inactivo`
+        demButton.innerHTML = `&#8595;`
     }
 
     demCardsContainer.classList.toggle('open')
@@ -69,6 +86,34 @@ buttons.forEach(button => {
 
     })
 })
+
+//localStorage
+//Get the element from the dom
+const messagePara = document.querySelector('#lastVisited');
+//Always get the current date
+const currentDate = new Date().getTime(); //Time in ms
+
+
+if (localStorage.getItem('day') !== null) {   
+
+    //Get the day and parse from string to number
+    const lastDayVisited = Number(localStorage.getItem('day'));
+    //How any days since last visit = today - last day visited
+    const timeSinceLastVisit = currentDate - lastDayVisited;
+
+        //If it's been less than a day: back so soon, if not, last visited message
+    timeSinceLastVisit < 86400000 ? messagePara.innerHTML = `Back so soon! Awesome!`:  messagePara.innerHTML = `You last visited ${Math.floor(timeSinceLastVisit / 86400000)} days ago`;
+
+
+
+} else {
+    //User's first time
+    localStorage.setItem('day',currentDate);
+    messagePara.innerHTML = `Welcome! Let us know if you have any questions.`
+}
+
+
+
 
 // Select the DOM elements for output
 const currentyear = document.querySelector("#currentyear");

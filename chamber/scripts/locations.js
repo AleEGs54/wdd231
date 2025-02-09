@@ -26,6 +26,7 @@ export default function createLocationsCard(locations){
         image.setAttribute('alt', `${location.image.alt}`);
         image.setAttribute('width', '300');
         image.setAttribute('height', '200');
+        image.setAttribute('loading', 'lazy');
 
         //Append the elements
         figure.appendChild(image);

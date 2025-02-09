@@ -1,0 +1,49 @@
+{
+    "historical_sites": [
+      {
+        "name": "Machu Picchu",
+        "location": "Urubamba Province, Cusco Region, Peru",
+        "description": "A 15th-century Inca citadel set high in the Andes Mountains at 2,430 meters above sea level. Built as an estate for the Inca emperor Pachacuti, this magnificent complex of stone architecture seamlessly integrates with its natural surroundings. Features agricultural terraces, residential areas, temples, and astronomical observation points. Known for its sophisticated dry-stone walls that fuse huge blocks without the use of mortar.",
+        "image": {
+          "url": "images/machu-picchu.webp",
+          "alt": "Ancient Inca citadel of Machu Picchu with Huayna Picchu mountain in background"
+        }
+      },
+      {
+        "name": "Chan Chan",
+        "location": "Trujillo, La Libertad Region, Peru",
+        "description": "The largest pre-Columbian city in South America and the capital of the ancient Chimú Kingdom. This massive adobe city spans nearly 20 square kilometers and was built around 850 CE. The complex includes nine large rectangular citadels, each containing temples, residential areas, and storehouses. Its walls are decorated with intricate reliefs featuring geometric patterns and stylized animals.",
+        "image": {
+          "url": "images/chan-chan.webp",
+          "alt": "Ancient adobe walls and structures of Chan Chan archaeological site"
+        }
+      },
+      {
+        "name": "Nazca Lines",
+        "location": "Nazca Desert, Ica Region, Peru",
+        "description": "A series of massive ancient geoglyphs etched into the desert floor between 500 BCE and 500 CE. These mysterious lines form over 300 figures, including animals such as hummingbirds, spiders, monkeys, and lizards, as well as geometric shapes. Some designs stretch over 200 meters across and are best viewed from the air. Their precise purpose remains debated by archaeologists.",
+        "image": {
+          "url": "images/lineas-nazca.webp",
+          "alt": "Aerial view of the Nazca Lines showing the hummingbird geoglyph"
+        }
+      },
+      {
+        "name": "Kuelap",
+        "location": "Luya Province, Amazonas Region, Peru",
+        "description": "A massive stone fortress built by the Chachapoyas civilization around 500-1500 CE. Located at 3,000 meters above sea level, this site contains over 400 circular buildings and is surrounded by 20-meter-high stone walls. Often called the 'Machu Picchu of the north,' it showcases sophisticated architecture and offers insights into the mysterious Chachapoyas culture.",
+        "image": {
+          "url": "images/kuelap.webp",
+          "alt": "Stone circular buildings and fortress walls of Kuelap archaeological site"
+        }
+      },
+      {
+        "name": "Caral",
+        "location": "Supe Valley, Lima Region, Peru",
+        "description": "The oldest known civilization in the Americas, dating back to approximately 2600 BCE. This ancient city features complex architecture including six large pyramids, circular plazas, and residential areas. The site demonstrates sophisticated urban planning with evidence of musical instruments, astronomical observation points, and sustainable agricultural practices, challenging previous theories about early American civilizations.",
+        "image": {
+          "url": "images/caral.webp",
+          "alt": "Ancient pyramids and structures of Caral archaeological complex"
+        }
+      }
+    ]
+  }
