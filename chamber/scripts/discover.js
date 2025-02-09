@@ -1,3 +1,9 @@
+//imports
+import createLocationsCard from "./locations.js";
+
+
+
+
 const hamButton = document.querySelector('#menu');
 const navigation = document.querySelector('#animateme');
 
@@ -6,6 +12,20 @@ hamButton.addEventListener('click', function () {
     navigation.classList.toggle('open'); //This is to display (as block) the menu options
 
 });
+
+//get json info
+const locations = 'data/locations.json';
+
+async function getLocationsData(url) {
+    const response = await fetch(url);
+    const data = await response.json();
+
+    createLocationsCard(data.locations)
+    
+
+}
+
+getLocationsData(locations);
 
 //Unhide the elements in the dom
 const demCardsContainer = document.querySelector('#demographics-cards');

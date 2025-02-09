@@ -1,0 +1,127 @@
+{
+    "locations": [
+      {
+        "name": "Parque del Amor (Love Park)",
+        "address": "Malecón Cisneros, Miraflores 15074",
+        "description": "Overlooking the Pacific Ocean, this romantic park features colorful mosaic walls inspired by Gaudí's work in Barcelona, with the centerpiece being the 'El Beso' (The Kiss) sculpture. The park offers stunning sunset views and is a popular spot for couples and photographers. The mosaic benches and walls are adorned with romantic quotes in Spanish.",
+        "image": {
+          "url": "images/parque-del-amor.webp",
+          "alt": "Parque del Amor with El Beso sculpture and ocean view"
+        },
+        "entrance_fee": {
+          "amount": 0,
+          "currency": "PEN",
+          "notes": "Free public access"
+        }
+      },
+      {
+        "name": "Larcomar Shopping Center",
+        "address": "Malecón de la Reserva 610, Miraflores 15074",
+        "description": "Built into the cliffs overlooking the Pacific Ocean, Larcomar is a modern architectural marvel. This open-air shopping center features high-end stores, restaurants with ocean views, a food court, and entertainment options. It's particularly beautiful at sunset and offers some of the best views of the Lima coastline.",
+        "image": {
+          "url": "images/larcomar-cc.webp",
+          "alt": "Larcomar Shopping Center cliff view"
+        },
+        "entrance_fee": {
+          "amount": 0,
+          "currency": "PEN",
+          "notes": "Free entry, parking fees apply"
+        }
+      },
+      {
+        "name": "Huaca Pucllana",
+        "address": "Calle General Borgoño cuadra 8, Miraflores 15074",
+        "description": "This pre-Inca pyramid temple, built around 500 CE, sits remarkably in the middle of Miraflores. The adobe pyramid was an important ceremonial and administrative center. Today, visitors can take guided tours, learn about Lima's ancient history, and even dine at the on-site restaurant with views of the illuminated ruins at night.",
+        "image": {
+          "url": "images/huaca-pucllana.webp",
+          "alt": "Huaca Pucllana ancient pyramid"
+        },
+        "entrance_fee": {
+          "amount": 15,
+          "currency": "PEN",
+          "notes": "Includes guided tour. Students: 8 PEN, Children under 12: 4 PEN"
+        }
+      },
+      {
+        "name": "Kennedy Park (Parque Kennedy)",
+        "address": "Av. José Larco & Diagonal, Miraflores 15074",
+        "description": "The heart of Miraflores, this lively park is known for its resident cats, art exhibitions, and cultural events. Street performers, artisan markets, and food vendors make this park come alive, especially in the evenings. The park is surrounded by restaurants, cafes, and ice cream shops.",
+        "image": {
+          "url": "images/parque-kennedy.webp",
+          "alt": "Kennedy Park with cats and visitors"
+        },
+        "entrance_fee": {
+          "amount": 0,
+          "currency": "PEN",
+          "notes": "Free public access"
+        }
+      },
+      {
+        "name": "Plaza Mayor (Plaza de Armas)",
+        "address": "Jirón Junín, Cercado de Lima 15001",
+        "description": "The historic main square of Lima features stunning colonial architecture, including the Government Palace, Cathedral of Lima, and Archbishop's Palace. The plaza has been the heart of the city since its founding in 1535. The changing of the guard at the Government Palace occurs daily at noon.",
+        "image": {
+          "url": "images/plaza-de-armas.webp",
+          "alt": "Plaza Mayor with Government Palace"
+        },
+        "entrance_fee": {
+          "amount": 0,
+          "currency": "PEN",
+          "notes": "Plaza is free; Cathedral entry: 10 PEN"
+        }
+      },
+      {
+        "name": "Circuito Mágico del Agua",
+        "address": "Jr. Madre de Dios S/N, Cercado de Lima 15046",
+        "description": "The Magic Water Circuit holds the Guinness World Record for the largest fountain complex in the world. The park features 13 different fountains, with evening light and laser shows synchronized to music. The interactive fountains and colorful displays make this a must-visit attraction, especially at night.",
+        "image": {
+          "url": "images/circuito-magico-del-agua.webp",
+          "alt": "Circuito Mágico del Agua night show"
+        },
+        "entrance_fee": {
+          "amount": 4,
+          "currency": "PEN",
+          "notes": "Children under 5: Free. Special prices for seniors and students"
+        }
+      },
+      {
+        "name": "Museo Larco",
+        "address": "Av. Simón Bolívar 1515, Pueblo Libre 15084",
+        "description": "Housed in an 18th-century mansion, this museum offers one of the largest collections of pre-Columbian art in Peru. Famous for its gallery of pre-Columbian erotic pottery and extensive gold and silver collections. The museum features a beautiful garden restaurant and is known for its well-organized exhibitions that chronicle 5,000 years of Peruvian history.",
+        "image": {
+          "url": "images/museo-larco.webp",
+          "alt": "Museo Larco exterior and gardens"
+        },
+        "entrance_fee": {
+          "amount": 35,
+          "currency": "PEN",
+          "notes": "Students: 30 PEN. Children under 8: Free. Includes access to storage collection"
+        }
+      },
+      {
+        "name": "Barranco Art District",
+        "address": "Barranco District (adjacent to Miraflores)",
+        "description": "Though technically not in Miraflores, this bohemian district is just a short distance away. Known for its artistic atmosphere, colonial architecture, and vibrant street art, Barranco features numerous art galleries, museums, and the famous Bridge of Sighs (Puente de los Suspiros). The area is also home to some of Lima's best restaurants and bars.",
+        "image": {
+          "url": "images/barranco.webp",
+          "alt": "Barranco Bridge of Sighs"
+        },
+        "entrance_fee": {
+          "amount": 0,
+          "currency": "PEN",
+          "notes": "District is free to explore; museum fees vary (MATE: 30 PEN, MAC: 10 PEN)"
+        }
+      }
+    ],
+    "metadata": {
+      "last_updated": "2025-02-08",
+      "currency": "PEN",
+      "timezone": "America/Lima",
+      "note": "Opening hours may vary by season and due to local events or holidays. It's recommended to check current operating hours before visiting.",
+      "exchange_rate": {
+        "USD_to_PEN": "3.70",
+        "EUR_to_PEN": "4.00",
+        "last_updated": "2025-02-08"
+      }
+    }
+  }
