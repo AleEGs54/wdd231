@@ -47,6 +47,6 @@ export default function createHistoricalPlacesCards(places) {
         
     })
     
-    console.log(ul)
+
     carousel.appendChild(ul);
 }

@@ -103,7 +103,8 @@ if (localStorage.getItem('day') !== null) {
     const timeSinceLastVisit = currentDate - lastDayVisited;
 
         //If it's been less than a day: back so soon, if not, last visited message
-    timeSinceLastVisit < 86400000 ? messagePara.innerHTML = `Back so soon! Awesome!`:  messagePara.innerHTML = `You last visited ${Math.floor(timeSinceLastVisit / 86400000)} days ago`;
+    timeSinceLastVisit < 86400000 ? messagePara.innerHTML = `Back so soon! Awesome!`:  
+    timeSinceLastVisit < (86400000 * 2) ? messagePara.innerHTML = `You last visited ${Math.floor(timeSinceLastVisit / 86400000)} day ago` : messagePara.innerHTML = `You last visited ${Math.floor(timeSinceLastVisit / 86400000)} days ago`;
 
 
 
