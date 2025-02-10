@@ -2,7 +2,7 @@
     "locations": [
       {
         "name": "Parque del Amor (Love Park)",
-        "address": "Malecón Cisneros, Miraflores 15074",
+        "address": "Malecón Cisneros, Miraflores",
         "description": "Overlooking the Pacific Ocean, this romantic park features colorful mosaic walls inspired by Gaudí's work in Barcelona, with the centerpiece being the 'El Beso' (The Kiss) sculpture. The park offers stunning sunset views and is a popular spot for couples and photographers. The mosaic benches and walls are adorned with romantic quotes in Spanish.",
         "image": {
           "url": "images/parque-del-amor.webp",
@@ -12,7 +12,7 @@
       },
       {
         "name": "Larcomar Shopping Center",
-        "address": "Malecón de la Reserva 610, Miraflores 15074",
+        "address": "Malecón de la Reserva 610, Miraflores",
         "description": "Built into the cliffs overlooking the Pacific Ocean, Larcomar is a modern architectural marvel. This open-air shopping center features high-end stores, restaurants with ocean views, a food court, and entertainment options. It's particularly beautiful at sunset and offers some of the best views of the Lima coastline.",
         "image": {
           "url": "images/larcomar-cc.webp",
@@ -22,7 +22,7 @@
       },
       {
         "name": "Huaca Pucllana",
-        "address": "Calle General Borgoño cuadra 8, Miraflores 15074",
+        "address": "Calle General Borgoño cuadra 8, Miraflores",
         "description": "This pre-Inca pyramid temple, built around 500 CE, sits remarkably in the middle of Miraflores. The adobe pyramid was an important ceremonial and administrative center. Today, visitors can take guided tours, learn about Lima's ancient history, and even dine at the on-site restaurant with views of the illuminated ruins at night.",
         "image": {
           "url": "images/huaca-pucllana.webp",
@@ -32,7 +32,7 @@
       },
       {
         "name": "Kennedy Park (Parque Kennedy)",
-        "address": "Av. José Larco & Diagonal, Miraflores 15074",
+        "address": "Av. José Larco & Diagonal, Miraflores",
         "description": "The heart of Miraflores, this lively park is known for its resident cats, art exhibitions, and cultural events. Street performers, artisan markets, and food vendors make this park come alive, especially in the evenings. The park is surrounded by restaurants, cafes, and ice cream shops.",
         "image": {
           "url": "images/parque-kennedy.webp",
@@ -42,7 +42,7 @@
       },
       {
         "name": "Plaza Mayor (Plaza de Armas)",
-        "address": "Jirón Junín, Cercado de Lima 15001",
+        "address": "Jirón Junín, Cercado de Lima",
         "description": "The historic main square of Lima features stunning colonial architecture, including the Government Palace, Cathedral of Lima, and Archbishop's Palace. The plaza has been the heart of the city since its founding in 1535. The changing of the guard at the Government Palace occurs daily at noon.",
         "image": {
           "url": "images/plaza-de-armas.webp",
@@ -52,7 +52,7 @@
       },
       {
         "name": "Circuito Mágico del Agua",
-        "address": "Jr. Madre de Dios S/N, Cercado de Lima 15046",
+        "address": "Jr. Madre de Dios S/N, Cercado de Lima",
         "description": "The Magic Water Circuit holds the Guinness World Record for the largest fountain complex in the world. The park features 13 different fountains, with evening light and laser shows synchronized to music. The interactive fountains and colorful displays make this a must-visit attraction, especially at night.",
         "image": {
           "url": "images/circuito-magico-del-agua.webp",
@@ -62,7 +62,7 @@
       },
       {
         "name": "Museo Larco",
-        "address": "Av. Simón Bolívar 1515, Pueblo Libre 15084",
+        "address": "Av. Simón Bolívar 1515, Pueblo Libre",
         "description": "Housed in an 18th-century mansion, this museum offers one of the largest collections of pre-Columbian art in Peru. Famous for its gallery of pre-Columbian erotic pottery and extensive gold and silver collections. The museum features a beautiful garden restaurant and is known for its well-organized exhibitions that chronicle 5,000 years of Peruvian history.",
         "image": {
           "url": "images/museo-larco.webp",
