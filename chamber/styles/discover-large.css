@@ -1,4 +1,8 @@
-@media screen and (min-width: 64rem){
+@media screen and (min-width: 90rem){
+
+    main{
+        background-color: aqua;
+    }
 
     #hero img{
         width: 100%;

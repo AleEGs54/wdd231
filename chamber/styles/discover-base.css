@@ -102,10 +102,15 @@ section{
 
 .title{
     text-align: center;
-    margin: 1em 0 ;
+    width: 100%;
+    margin: 1em auto ;
+    padding: .5rem;
     font-size: 1.5em;
     font-weight: bold;
-    background-color: var(--accent-color);
+    /* background-color: var(--text-color); */
+    background-color: var(--secondary-color);
+    /* background-color: var(--primary-color); */
+    color: var(--alternative-text-color);
 }
 
 .demo-card{
