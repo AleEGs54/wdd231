@@ -90,14 +90,15 @@ section{
     /* align-items: center;
     justify-content: center; */
     /* gap: 2em; */
+    
 
     overflow: hidden;
-    max-height: 25em;
+    max-height: 30em;
     transition: max-height 0.5s ease-out;
 }
 
 #demographics-cards.open{
-    max-height: 100em;
+    max-height: 200em; /*Sadly fit-content doesn't work for transitions :(*/
 }
 
 .title{
@@ -120,6 +121,10 @@ section{
     justify-content: center;
     text-align: justify;
     margin: 1.5em ;
+    border: 5px solid var(--accent-color);
+        border-radius: 1rem;
+        padding: 1rem;
+    
 }
 
 .demo-card h2{
@@ -305,7 +310,8 @@ section{
     border-radius: .2rem;
     width: 10rem;
     height: 3rem;
-    margin: 1rem auto;
+    margin: 2rem auto;
+    box-shadow: 5px 5px 10px 0 black;
 
     background-color: var(--text-color);
     color: var(--alternative-text-color);

@@ -1,37 +1,133 @@
-@media screen and (min-width: 52rem){
+@media screen and (min-width: 52rem) {
 
-        /* Hero */
-    #hero{
+    /* Hero */
+    #hero {
         width: 100%;
         height: 100%;
     }
 
-    #hero img{
+    h1 {
+        font-size: 3em;
+    }
+
+    #hero img {
         width: 100%;
         height: 100%;
     }
 
-    .hero-text{
+    .hero-text {
         top: 40%;
     }
 
-    .hero-text > p{
+    .hero-text>p {
         margin: 1rem;
         font-size: 1.5em;
     }
 
-    #lastVisited{
+    #lastVisited {
         padding: 1em;
         margin: 1em;
     }
 
     /* end hero */
     /* sections in general */
-    .title{
+    .title {
         /* the h2 just after section begins */
-        width: 80%;
+        /* width: 100%; */
         padding: 1em 3em;
         margin: 1em auto;
+    }
+
+    /* demographics */
+    #demographics-cards {
+        display: grid;
+        overflow: visible;
+        /*allow the content to be visible*/
+        max-height: fit-content;
+        /*To destroy a limit*/
+    }
+
+    /* normal */
+
+    .demo-card {
+        display: grid;
+        grid-template-columns: 20em 1fr;
+    }
+
+    .demo-card img {
+        grid-row: 1/3;
+        margin: 0 auto;
+    }
+
+    .demo-card p {
+        margin: 0 1rem;
+        font-size: 1.2rem;
+    }
+
+    /* reverse  */
+    .demo-card.reverse {
+        grid-template-columns: 1fr 20em;
+
+    }
+
+    .demo-card.reverse img {
+        grid-row: 1/3;
+        grid-column: 2/3;
+    }
+
+    .demo-card.reverse h2 {
+        grid-row: 1/2;
+        grid-column: 1/2;
+    }
+
+    .demo-card.reverse p {
+        grid-row: 2/3;
+        grid-column: 1/2;
+    }
+
+    .button-wrap {
+        /* No button */
+        display: none;
+    }
+
+    /* historical places */
+    .slide img {
+        height: 60%;
+        object-fit: contain;
+    }
+
+    .slide>p {
+        font-size: 1.2em;
+    }
+
+    .carousel-button {
+        background-color: rgba(0, 0, 0, .5);
+    }
+
+    .carousel-button:hover,
+    .carousel-button:focus {
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+
+
+    /* events */
+
+    .event {
+        grid-template-areas:
+            'picture name'
+            'picture address'
+            'picture description'
+            'picture button';
+
+        object-fit: cover;
+    }
+
+    .event figure {
+        width: 25em;
+    }
+
+    .event>p {
+        font-size: 1.2rem;
     }
 
 }
