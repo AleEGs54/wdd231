@@ -81,13 +81,13 @@ section{
 /* Demographics card */
 
 #demographics-cards{
-    display: grid;
+    /* display: grid; */
     /* max-height: 30em; */
 
 
     /* This aligns the containers */
-    align-items: center;
-    justify-content: center;
+    /* align-items: center;
+    justify-content: center; */
     /* gap: 2em; */
 
     overflow: hidden;
