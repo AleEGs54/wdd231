@@ -46,7 +46,8 @@ getLocationsData(locations);
 
 //Unhide the elements in the dom
 const demCardsContainer = document.querySelector('#demographics-cards');
-const demCards = document.querySelectorAll('.hide'); //Selecting all the demo-cards that have a class of unhide
+// const expandP = document.querySelector('p.expand');
+
 const demButton = document.querySelector('.dem-button');
 
 demButton.addEventListener('click', () => {
@@ -56,9 +57,13 @@ demButton.addEventListener('click', () => {
 
     if (demButton.classList.contains('open')) {
         demButton.innerHTML = `&#8593;`
+        // expandP.innerHTML = ``;
+        // expandP.innerHTML = `Close article`;
     }
     else {
         demButton.innerHTML = `&#8595;`
+        // expandP.innerHTML = ``;
+        // expandP.innerHTML = `Open article`;
     }
 
     demCardsContainer.classList.toggle('open')

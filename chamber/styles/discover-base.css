@@ -123,16 +123,26 @@ section{
 
 .button-wrap{
     width: 100%;
-    background-color: var(--accent-color);
     text-align: center;
     padding: .5rem;
 }
 
 .dem-button{
-    font-size: 2.5rem;
     background-color: var(--accent-color);
-    padding: .2em;
+    font-size: 2.5rem;
+    background-color: rgba(0, 0, 0, .1);
+    padding: .2em 1rem;
     border: none;
+}
+
+.expand{
+    background-color: var(--text-color);
+    color: var(--accent-color);
+    margin: 1em auto;
+    width: 7rem;
+    padding: .4em;
+
+
 }
 
 
