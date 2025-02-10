@@ -242,6 +242,11 @@ section{
 /* Carousel end */
 
 /* event-cards */
+
+#events-cards{
+    margin: 1em 0;
+}
+
 .event{
     display: grid;
 
