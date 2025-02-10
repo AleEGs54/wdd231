@@ -26,4 +26,21 @@
     }
 
 
+    .event figure {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .event img{
+
+        transition: width 0.5s ease, height 0.5s ease;
+    }
+
+    .event img:hover{
+        width: 105%;
+        height: 105%;
+
+    }
+
 }
