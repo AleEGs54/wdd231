@@ -57,13 +57,9 @@ demButton.addEventListener('click', () => {
 
     if (demButton.classList.contains('open')) {
         demButton.innerHTML = `&#8593;`
-        // expandP.innerHTML = ``;
-        // expandP.innerHTML = `Close article`;
     }
     else {
         demButton.innerHTML = `&#8595;`
-        // expandP.innerHTML = ``;
-        // expandP.innerHTML = `Open article`;
     }
 
     demCardsContainer.classList.toggle('open')
