@@ -179,14 +179,20 @@ section{
 }
 
 .slide {
+    visibility: hidden;
     position: absolute;
     inset: 0;
     opacity: 0;
-    transition:  200ms opacity ease-in-out;
+    transition:  200ms visibility ease-in-out, 200ms opacity ease-in-out;
     /* transition-delay: 200ms; */
     text-align: center;
 }
 
+.slide[data-active] {
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 200ms;
+}
 
 .slide > img{
     display: block;
