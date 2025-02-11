@@ -1,4 +1,3 @@
-
 * {
     --primary-color: #000;
     --secondary-color: #959595;
@@ -12,12 +11,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  
-  
+
+
 
 }
 
-html{
+html {
     box-sizing: border-box;
     height: 100%;
 }
@@ -26,55 +25,62 @@ html{
 
 /* HEADER */
 
-header{
+header {
     /* styling */
     color: var(--text-color);
     background-color: var(--primary-color);
-    
+    margin: 0 auto;
+    padding: 0;
+
 
     /* position */
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-content: space-evenly;
+    grid-template-areas:
+        "name logo button"
+        "animateme animateme animateme";
     align-items: center;
     overflow: hidden;
 }
 
 
-#logo-picture{
-    margin: 0 1rem;
+#logo-picture {
     width: 4rem;
     height: 4rem;
+    grid-area: logo;
 }
 
-nav{
+
+
+nav {
     display: grid;
     grid-template-rows: 0fr;
     grid-column: 1/3;
+    grid-area: animateme;
 
     /* to smooth the transition */
     transition: grid-template-rows 0.5s ease-out;
 }
 
 /* This works only when user clicks the burguer button!!!! */
-nav.open{
+nav.open {
     grid-template-rows: 1fr;
 }
 
 /* end open */
 
-ul.link-navigator{
+ul.link-navigator {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; /*This keeps the ul big box in the center, but not the words*/
+    align-items: center;
+    /*This keeps the ul big box in the center, but not the words*/
     /* Hiddes the nav while is closed */
     overflow: hidden;
 
 }
 
 
-ul.link-navigator li  a{
+ul.link-navigator li a {
     text-decoration: none;
     background-color: var(--accent-color);
     color: var(--alternative-text-color);
@@ -85,7 +91,7 @@ ul.link-navigator li  a{
     padding: 1em;
 }
 
-ul.link-navigator li{
+ul.link-navigator li {
     list-style-type: none;
     background-color: var(--text-color);
     width: 100%;
@@ -93,23 +99,25 @@ ul.link-navigator li{
 }
 
 /* Change the color when hover */
-ul.link-navigator li:hover{
+ul.link-navigator li:hover {
     background-color: var(--accent-color);
 }
 
-li a:hover{
+li a:hover {
     color: var(--text-color);
 
 }
+
 /* end hover */
 
-.buttons-box{
+.buttons-box {
     display: flex;
     justify-content: flex-end;
     margin: 0 1.5rem;
+    grid-area: button;
 }
 
-#menu, #toggle-bg-color{
+#menu {
     font-size: 2rem;
     background: none;
     border: 0;
@@ -123,13 +131,13 @@ li a:hover{
     line-height: 10px;
 }
 
-ul.link-navigator a.active-link{
+ul.link-navigator [data-active-link] {
     /* current page open */
     text-decoration: underline;
-    
+
 }
 
-#menu:hover, #toggle-bg-color:hover{
+#menu:hover {
     /* adding a pointer to the buttons when hover */
     cursor: pointer;
 }
@@ -139,7 +147,7 @@ ul.link-navigator a.active-link{
 
 /* FOOTER */
 
-footer{
+footer {
     display: flex;
     flex-direction: column;
     gap: 1em;
@@ -147,20 +155,21 @@ footer{
     /* style */
     background-color: var(--accent-color);
     color: var(--text-color);
-    padding: 1em ;
+    padding: 1em;
 }
 
-footer div{
+footer div {
     display: flex;
     flex-direction: column;
     gap: .5rem;
 }
 
-footer div:first-child{
-    border-bottom: 1px solid #000;
+footer div:first-child {
+    border-bottom: 1px solid #fff;
+    padding-bottom: 1rem;
 }
 
-footer a{
+footer a {
     color: var(--text-color);
 }
 
@@ -170,69 +179,119 @@ footer a{
 
 
     /* HEADER */
-    
-        /* Destroying the hamburguer button */
-    
-        header{
-            display: flex;
-            flex-direction: row;
-            justify-content:space-between;
-            height: 5em;
-            /* flex: 1 1 100%; */
-        }
-    
-        .logo-picture{
-            justify-self: start;
-        }
-    
-        .buttons-box{
-            /* buttons box is direct son of the flex */
-            order: 1;
-        }
-    
-        #menu{
-            display: none;
-        }
-    
-    
-        nav{
-            display: flex;
-            flex-direction: row;
-            justify-content: end;
-            order: 0;
-            width: 100%;
-            padding: 0 4rem;
-        }
-    
-        ul.link-navigator{
-            flex-direction: row;
-        }
-    
-        ul.link-navigator li{
-            background-color: #fff;
-        }
-        li a{
-            color: var(--text-color);
-            transition: color 0.25s ease;
-            width: 100%;
-            padding: 0 1.5em;
-            font-weight: 500;
-        }
-    
-        li a:hover{
-            color: #F3BE3C;
-        }
-        ul.link-navigator li:hover{
-            background-color: #fff;
-            text-decoration: underline;
-            text-decoration-color: var(--accent-color);
-        }
-    
-    /* FOOTER */
-        footer{
-            flex-direction: row;
-            justify-content: space-between;
-            padding: 1em 4rem;
-        }
-    
+
+    /* Destroying the hamburguer button */
+
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 5em;
     }
+
+    .logo-picture {
+        justify-self: start;
+    }
+
+    [data-pixel-arena-logo] {
+        width: 300px;
+        height: 200px;
+    }
+
+    #animateme {
+        padding: 0;
+    }
+
+    .buttons-box {
+        /* buttons box is direct son of the flex */
+        order: 1;
+    }
+
+    #menu {
+        display: none;
+    }
+
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        order: 0;
+        width: 100%;
+        padding: 0 4rem;
+    }
+
+    ul.link-navigator {
+        flex-direction: row;
+        width: 45%;
+    }
+
+    ul.link-navigator li {
+        text-align: center;
+    }
+
+    ul.link-navigator li a {
+        color: var(--text-color);
+        background-color: #000;
+        transition: color 0.25s ease;
+        width: 100%;
+        font-weight: 500;
+        font-size: 1.3rem;
+    }
+
+    li a:hover {
+        font-weight: bold;
+    }
+
+    ul.link-navigator li:hover {
+        text-decoration: underline;
+        font-weight: bold;
+    }
+
+    /* FOOTER */
+    footer {
+        flex-direction: row;
+        justify-content: center;
+        padding: 1em 4rem;
+        font-size: 1.2rem;
+    }
+
+    footer div.page-info-footer-wrap {
+        width: 50%;
+        text-align: justify;
+        display: grid;
+        border-bottom: none;
+
+        grid-template-areas:
+            "title title"
+            "visit visit"
+            "email questions"
+            "copyright copyright";
+    }
+
+    .page-info-footer-wrap p:nth-child(1) {
+
+        grid-area: title;
+    }
+
+    .page-info-footer-wrap p:nth-child(2) {
+
+        grid-area: visit;
+    }
+
+    .page-info-footer-wrap p:nth-child(3) {
+
+        padding-right: .3rem;
+        border-right: 1px solid var(--text-color);
+        grid-area: email;
+    }
+
+    .page-info-footer-wrap p:nth-child(4) {
+        grid-area: questions;
+    }
+
+    .page-info-footer-wrap p:nth-child(5) {
+
+        grid-area: copyright;
+    }
+}
