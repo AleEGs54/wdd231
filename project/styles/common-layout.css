@@ -31,7 +31,10 @@ header {
     background-color: var(--primary-color);
     margin: 0 auto;
     padding: 0;
-
+    
+    position: fixed;
+    top: 0;
+    width: 100%;
 
     /* position */
     display: grid;
@@ -71,43 +74,32 @@ nav.open {
 ul.link-navigator {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    /*This keeps the ul big box in the center, but not the words*/
     /* Hiddes the nav while is closed */
     overflow: hidden;
 
 }
 
+ul.link-navigator li {
+    list-style-type: none;
+    width: 100%;
+}
 
 ul.link-navigator li a {
+    color: var(--text-color);
     text-decoration: none;
-    background-color: var(--accent-color);
-    color: var(--alternative-text-color);
     width: 100%;
     height: 100%;
     display: block;
-
+    text-align: center;
+    
     padding: 1em;
 }
 
-ul.link-navigator li {
-    list-style-type: none;
-    background-color: var(--text-color);
-    width: 100%;
-    text-align: end;
-}
-
-/* Change the color when hover */
-ul.link-navigator li:hover {
-    background-color: var(--accent-color);
-}
-
-li a:hover {
-    color: var(--text-color);
+ul.link-navigator [data-active-link] {
+    /* current page open */
+    background-color: rgb(48, 48, 48);
 
 }
-
 /* end hover */
 
 .buttons-box {
@@ -131,11 +123,6 @@ li a:hover {
     line-height: 10px;
 }
 
-ul.link-navigator [data-active-link] {
-    /* current page open */
-    text-decoration: underline;
-
-}
 
 #menu:hover {
     /* adding a pointer to the buttons when hover */
@@ -143,7 +130,11 @@ ul.link-navigator [data-active-link] {
 }
 
 
-
+/* MAIN */
+main{
+    /* To keep the nav from interfering with the main element */
+    margin-top: 8rem;
+}
 
 /* FOOTER */
 
@@ -176,7 +167,7 @@ footer a {
 /* MEDIA QUERIES */
 
 @media screen and (min-width: 52em) {
-
+    /* Medium screens */
 
     /* HEADER */
 
@@ -199,7 +190,7 @@ footer a {
     }
 
     #animateme {
-        padding: 0;
+        height: 100%; /*To make it fit inside the nav in medium and larger screens*/
     }
 
     .buttons-box {
@@ -223,29 +214,27 @@ footer a {
 
     ul.link-navigator {
         flex-direction: row;
-        width: 45%;
+        width: 100%;
     }
 
     ul.link-navigator li {
-        text-align: center;
-    }
-
-    ul.link-navigator li a {
-        color: var(--text-color);
-        background-color: #000;
-        transition: color 0.25s ease;
-        width: 100%;
         font-weight: 500;
         font-size: 1.3rem;
     }
 
-    li a:hover {
-        font-weight: bold;
+
+
+    ul.link-navigator.link-navigator li a:hover {
+        text-decoration: underline;
+        background-color: #5e5e5e;
     }
 
-    ul.link-navigator li:hover {
+    ul.link-navigator [data-active-link] {
         text-decoration: underline;
-        font-weight: bold;
+    }
+
+    main{
+        margin-top: 5rem;
     }
 
     /* FOOTER */
@@ -258,7 +247,6 @@ footer a {
 
     footer div.page-info-footer-wrap {
         width: 50%;
-        text-align: justify;
         display: grid;
         border-bottom: none;
 
@@ -294,4 +282,11 @@ footer a {
 
         grid-area: copyright;
     }
+
 }
+
+
+/* @media screen and (min-width: 90em) {
+
+} */
+
