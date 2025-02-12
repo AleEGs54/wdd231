@@ -111,8 +111,8 @@
 .container-track{
     /* Positioning */
     display: flex;
-    animation: scroll 20s linear infinite;
-    width: calc(200px * 14);
+    animation: scrollconsoles 20s linear infinite;
+    width: calc(200px * 24);
     height: 20rem;
     justify-content: center;
     align-items: center;
@@ -132,13 +132,13 @@
     height: 100%;
 }
 
-@keyframes scroll{
+@keyframes scrollconsoles{
 
     from{
         transform: translateX(0);
     }
     to{
-        transform: translateX(calc(-100px * 7));
+        transform: translateX(calc(-200px * 12));
     }
 
 }
@@ -162,22 +162,23 @@
 .container-track-reverse{
     /* Positioning */
     display: flex;
-    animation: reversescroll 20s linear infinite;
-    width: calc(200px * 14);
+    animation: reversescroll 25s linear infinite;
+    width: calc(200px * 32);
     height: 20rem;
     justify-content: center;
     align-items: center;
 }
 
 div.container-track-reverse.ctr-2{
-    animation: scroll 20s linear infinite;
+    animation: scrollvideogames 25s linear infinite;
+    
 
 }
 
 .game{
     /* Positioning */
     width: 200px;
-    height: 200px; 
+    height: 300px; 
 
     text-align: center;
     margin: 1rem;
@@ -188,13 +189,26 @@ div.container-track-reverse.ctr-2{
     height: 100%;
 }
 
-@keyframes reversescroll{
-
+@keyframes scrollvideogames{
+/* To the left */
     from{
-        transform: translateX(-100%);
+        /* transform: translateX(-1400px); */
+        transform: translateX(-21%);
     }
     to{
-        transform: translateX(calc(100px * 7));
+        transform: translateX(calc(-100px * 25));
+    }
+
+}
+
+@keyframes reversescroll{
+/* To the right */
+    from{
+        /* transform: translateX(-2800px); */
+        transform: translateX(-42.75%);
+    }
+    to{
+        transform: translateX(calc(100px * -20.4));
     }
 
 }
