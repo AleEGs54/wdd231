@@ -1,4 +1,5 @@
 import styleNavAndFooter from "./common-scripts.js";
+import displayLogos from "./scrollLogos.js";
 import GB_API_KEY from "./apiKey.js";
 
 styleNavAndFooter(); //To apply style to the nav and the footer
@@ -18,8 +19,8 @@ async function apiFetch(url) {
       });
       if (response.ok) {
         const data = await response.json();
-        console.log(data); // testing only
-        // displayResults(data); // uncomment when ready
+
+        displayLogos(data);
 
 
       } else {
