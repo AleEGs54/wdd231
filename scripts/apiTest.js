@@ -35,7 +35,7 @@
 
 //Fecth the API
 
-const apiUrl = `https://opencritic-api.p.rapidapi.com/platform`;
+const apiUrl = 'https://opencritic-api.p.rapidapi.com/game/popular';
 
 async function apiFetch(url) {
     try {
@@ -43,7 +43,7 @@ async function apiFetch(url) {
         method: "GET",
         headers: {
             'x-rapidapi-host': 'opencritic-api.p.rapidapi.com',
-            'x-rapidapi-key': '972ce4e446mshf048323eeb48952p174608jsnc1'
+            'x-rapidapi-key': '972ce4e446mshf048323eeb48952p174608jsnc1c70e3380a1'
         }
       });
       if (response.ok) {
@@ -69,6 +69,10 @@ async function apiFetch(url) {
 
     nameGame.textContent = `${data[1].name}`,
 
-    imgEle.src = `https://img.opencritic.com/${data[12].imageSrcV2}`;
+    imgEle.src = `https://img.opencritic.com/${data[16].images.box.og}`;
+    imgEle.width = '800';
+    imgEle.height = '1200';
+
+  
 
   }

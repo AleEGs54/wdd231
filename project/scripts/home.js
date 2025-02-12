@@ -33,6 +33,3 @@ async function apiFetch(url) {
   
   apiFetch(apiUrl);
 
-
-
-  
