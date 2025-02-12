@@ -1,3 +1,3 @@
- const GB_API_KEY = "972ce4e446mshf048323eeb48952p174608jsnc1c70e3380a1";
+ const GB_API_KEY = "5ab75d584fmsh10d9489d1d854c7p1160cbjsnfc8f273a83e5";
 
  export default GB_API_KEY;

@@ -44,7 +44,7 @@ async function apiFetch2(url) {
       method: "GET",
       headers: {
         'x-rapidapi-host': 'opencritic-api.p.rapidapi.com',
-        'x-rapidapi-key': '972ce4e446mshf048323eeb48952p174608jsnc1c70e3380a1'
+        'x-rapidapi-key': '5ab75d584fmsh10d9489d1d854c7p1160cbjsnfc8f273a83e5'
       }
     });
     if (response.ok) {
