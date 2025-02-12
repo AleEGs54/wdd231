@@ -36,6 +36,8 @@ header {
     top: 0;
     width: 100%;
 
+    z-index: 50; /*TO OVERLAP ANY OTHER ELEMENT IN THE DOM*/
+
     /* position */
     display: grid;
     grid-template-areas:
@@ -97,7 +99,7 @@ ul.link-navigator li a {
 
 ul.link-navigator [data-active-link] {
     /* current page open */
-    background-color: rgb(48, 48, 48);
+    background-color: rgb(20, 20, 20);
 
 }
 /* end hover */
