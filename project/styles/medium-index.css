@@ -19,6 +19,16 @@
 
     }
 
+    #call-to-action:hover{
+        background-color: rgba(0, 0, 0, .7);
+    }
+
+    #call-to-action a{
+        width: 100%;
+        height: 100%;
+        line-height: 4rem;
+    }
+
     .services {
         padding: .5rem;
     }
