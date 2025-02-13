@@ -3,8 +3,9 @@
     --secondary-color: #959595;
     --accent-color: #0065C5;
     --text-color: #fff;
-
+    --paragraph-size: 1.3rem;
     font-family: Arial, Helvetica, sans-serif;
+
 }
 
 .hero{
@@ -38,11 +39,16 @@
     left: 50%;
     transform: translate(-50%, -50%); /*Move the container 50% of itself to the left and to the top*/
     text-align: center;
-
+    
     color: var(--text-color);
-
+    
     /* Animation to appear when page loads */
     animation: toappear .75s ease-out  1 forwards;
+}
+
+.hero-text p, #call-to-action{
+    font-size: var(--paragraph-size);
+
 }
 
 
@@ -60,7 +66,7 @@
 }
 
 #call-to-action{
-    height: 3rem;
+    height: 4rem;
 
     border: 1px solid #fff;
     margin: 1rem 0;
@@ -106,6 +112,7 @@
     background-color: #000;
     text-align: center;
     padding: 1rem 0;
+    font-size: var(--paragraph-size)
 }
 
 .container-track{
@@ -161,6 +168,8 @@
 
 .catalog-text{
     margin: 2rem;
+    font-size: var(--paragraph-size);
+
 }
 
 .container-track-reverse{
@@ -216,4 +225,61 @@ div.container-track-reverse.ctr-2{
         transform: translateX(calc(100px * 20));
     }
 
+}
+/* End games */
+
+/* Services */
+
+.services-introduction{
+    text-align: center;
+    font-size: var(--paragraph-size);
+    padding: 2rem;
+}
+
+.services-list{
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.services-list ul{
+    /* To center the li */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+
+}
+
+.services-list ul li{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.services-list li a:visited, .services-list li a{
+    color: var(--primary-color);
+}
+
+.service-img-container{
+    overflow: hidden;
+    object-position: center;
+    object-fit: cover;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+
+}
+
+.service-img-container img{
+    width: 100%;
+    height: 100%;
+}
+
+.services-list p{
+    font-size: var(--paragraph-size);
 }
