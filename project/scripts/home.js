@@ -9,6 +9,7 @@ styleNavAndFooter(); //To apply style to the nav and the footer
 
 const apiUrl = `https://opencritic-api.p.rapidapi.com/platform`;
 
+
 async function apiFetch(url) {
     try {
       const response = await fetch(url, {
@@ -37,17 +38,11 @@ async function apiFetch(url) {
 
   //Fecth the API for games
 
-  const apiUrl2 = 'https://opencritic-api.p.rapidapi.com/game/popular';
+  const apiUrl2 = 'data/games.json';
 
 async function apiFetch2(url) {
   try {
-    const response = await fetch(url, {
-      method: "GET",
-      headers: {
-        'x-rapidapi-host': 'opencritic-api.p.rapidapi.com',
-        'x-rapidapi-key': '5ab75d584fmsh10d9489d1d854c7p1160cbjsnfc8f273a83e5'
-      }
-    });
+    const response = await fetch(url);
     if (response.ok) {
       const data = await response.json();
       console.log(data); // testing only

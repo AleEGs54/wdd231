@@ -1,11 +1,11 @@
 export default function displayGames(data) {
 
-    const objectLenght = (Object.keys(data).length);
+    const objectLenght = (data.games.length);
 
     const main = document.querySelector(".games-catalog");
 
 
-    for (let times = 0; times < 2; times++) {
+    for (let times = 0; times < 3; times++) {
         let totalIndex = 0
 
         for (let counter = 1; counter <= 3; counter++) {
@@ -17,10 +17,11 @@ export default function displayGames(data) {
 
                 const image = document.createElement("img");
 
-                image.src = `https://img.opencritic.com/${data[totalIndex].images.box.og}`;
+                image.src = `${data.games[totalIndex].image}`;
                 image.width = "200";
                 image.height = "300";
-                image.alt = data[totalIndex].name;
+                image.alt = data.games[totalIndex].name;
+                image.loading = "lazy";
                 container.classList.add("game");
 
                 container.appendChild(image);

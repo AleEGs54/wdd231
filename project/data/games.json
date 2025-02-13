@@ -1,0 +1,101 @@
+
+{
+    "games": [
+      {
+        "image": "images/bhh.webp",
+        "name": "Big Helmet Heroes"
+      },
+      {
+        "image": "images/botany.webp",
+        "name": "Botany Manor"
+      },
+      {
+        "image": "images/civvii.webp",
+        "name": "Sid Meier's Civilization VII"
+      },
+      {
+        "image": "images/cuisiner.webp",
+        "name": "Cuisineer"
+      },
+      {
+        "image": "images/dkcr.webp",
+        "name": "Donkey Kong Country Returns HD"
+      },
+      {
+        "image": "images/dwo.webp",
+        "name": "Dynasty Warriors: Origins"
+      },
+      {
+        "image": "images/ender.webp",
+        "name": "Ender Magnolia: Bloom in the Mist"
+      },
+      {
+        "image": "images/finalfvii.webp",
+        "name": "Final Fantasy VII Rebirth"
+      },
+      {
+        "image": "images/freedom.webp",
+        "name": "Freedom Wars Remastered"
+      },
+      {
+        "image": "images/kingdom-2.webp",
+        "name": "Kingdom Come: Deliverance II"
+      },
+      {
+        "image": "images/laika.webp",
+        "name": "Laika: Aged Through Blood"
+      },
+      {
+        "image": "images/mmf.webp",
+        "name": "Momodora: Moonlit Farewell"
+      },
+      {
+        "image": "images/ngb.webp",
+        "name": "Ninja Gaiden 2 Black"
+      },
+      {
+        "image": "images/pbtlh.webp",
+        "name": "Phantom Brave: The Lost Hero"
+      },
+      {
+        "image": "images/rotn.webp",
+        "name": "Rift of the NecroDancer"
+      },
+      {
+        "image": "images/se.webp",
+        "name": "Sniper Elite: Resistance"
+      },
+      {
+        "image": "images/sotn.webp",
+        "name": "Sword of the Necromancer: Resurrection"
+      },
+      {
+        "image": "images/soul.webp",
+        "name": "Legacy of Kain: Soul Reaver 1 & 2 Remastered"
+      },
+      {
+        "image": "images/spiderman2.webp",
+        "name": "Marvel's Spider-Man 2"
+      },
+      {
+        "image": "images/stone.webp",
+        "name": "The Stone of Madness"
+      },
+      {
+        "image": "images/synd.webp",
+        "name": "SYNDUALITY: Echo of Ada"
+      },
+      {
+        "image": "images/ttd.webp",
+        "name": "The Legend of Heroes: Trails Through Daybreak II"
+      },
+      {
+        "image": "images/turbo.webp",
+        "name": "Turbo Overkill"
+      },
+      {
+        "image": "images/umdc.webp",
+        "name": "Urban Myth Dissolution Center"
+      }
+    ]
+  }
