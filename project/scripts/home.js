@@ -1,6 +1,7 @@
 import styleNavAndFooter from "./common-scripts.js";
 import displayLogos from "./scrollLogos.js";
 import GB_API_KEY from "./apiKey.js";
+import displayGames from "./scrollGames.js";
 
 styleNavAndFooter(); //To apply style to the nav and the footer
 
@@ -52,7 +53,7 @@ async function apiFetch2(url) {
       console.log(data); // testing only
       // displayResults(data); // uncomment when ready
 
-      displayResults(data)
+      displayGames(data)
 
     } else {
       throw Error(await response.text());
