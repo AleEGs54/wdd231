@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel Arena - Memberships</title>
+    <meta name="author" content="Alejandro Esteves">
+    <meta name="description"
+        content="The best promotions in the industry of gaming. Forget about spending tons in new videogames.">
+
+    <!-- Open Graph properties -->
+    <meta property="og:title" content="Memberships">
+    <meta property="og:type" content="website">
+    <meta property="og:image"
+        content="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/LGD_Gaming_at_the_2015_LPL_Summer_Finals.jpg/800px-LGD_Gaming_at_the_2015_LPL_Summer_Finals.jpg">
+    <meta property="og:url" content="https://aleegs54.github.io/wdd231/project/index.html">
+
+    <!-- Styles and JS -->
+    <link rel="stylesheet" href="styles/common-layout.css">
+    <link rel="stylesheet" href="styles/membership.css">
+    <link rel="stylesheet" href="styles/medium-membership.css">
+    <link rel="stylesheet" href="styles/large-membership.css">
+    <link rel="icon" href="images/favicon.ico">
+    <script src="scripts/membership.js" type="module"></script>
+</head>
+
+<body>
+    <header>
+        <a href="https://aleegs54.github.io/wdd231/project/index.html">
+            <picture>
+                <source srcset="images/pixel-arena-alternative-logo-large.webp" media="(min-width: 912px)">
+                <img src="images/pixel-arena-alternative-logo.webp" alt="pixel-art-alien-logo" width="188" height="125" fetchpriority=high data-pixel-arena-logo>
+            </picture>
+        </a>
+        <img id="logo-picture" src="images/alien-logo.webp" alt="pixel-art-alien-logo" width="180" height="180"
+            fetchpriority=high>
+
+        <span class="buttons-box">
+            <button id="menu">&#9776;</button>
+        </span>
+        <nav id="animateme">
+            <ul class="link-navigator">
+                <li><a href="https://aleegs54.github.io/wdd231/project/index.html" >Home</a></li>
+                <li><a href="https://aleegs54.github.io/wdd231/project/membership.html" data-active-link>Memberships</a></li>
+                <li><a href="https://aleegs54.github.io/wdd231/project/rent.html">Daypass</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="hero">
+            <img src="images/membership-hero.webp" alt="Female standing looking at the camera" fetchpriority=high>
+            <div class="hero-text">
+                <h1>Memberships</h1>
+                <p>Experience Gaming Like Never Before</p>
+            </div>
+        </div>
+        <div class="membership-cards">
+            <div class="membership-introduction">
+                <h2>Introduction</h2>
+                <p>Content</p>
+            </div>
+            <div class="cards-container">
+                <section class="card non-member">
+                    <h3>Pay-Per-Hour</h3>
+                    <strong>Perfect for first-timers or occasional visitors.</strong>
+                    <ul>
+                        <li><h4>Price:</h4> <p><span class="price">$10</span> per hour.</p></li>
+                        <li><h4>Access to:</h4>
+                            <ul>
+                                <li>Standard consoles and gaming PCs.</li>
+                                <li>General gaming area.</li>
+                            </ul>
+                        </li>
+                        <li><h4>Features:</h4> 
+                            <ul>
+                                <li>No commitment or membership required.</li>
+                                <li>Pay only for the time spent.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <button class="get-plan-btn non-member">Get Plan</button>
+                </section>
+                
+                <section class="card basic">
+                    <div class="popular">👾 Most Popular</div>
+                    <h3>Basic</h3>
+                    <strong>For those who visit occasionally but want a better rate.</strong>
+                    <ul>
+                        <li><h4>Price:</h4> <p><span class="price">$15</span> <span>/ mon</span> <em>previously $20</em>.</p></li>
+                        <li><h4>Includes:</h4> 
+                            <ul>
+                                <li>15 hours of playtime per month (unused hours roll over to the next month).</li>
+                                <li>10% discount on additional hours.</li>
+                            </ul>
+                        </li>
+                        <li><h4>Benefits:</h4> 
+                            <ul>
+                                <li>Access to standard consoles and gaming PCs.</li>
+                                <li>Invitations to community events and tournaments.</li>
+                                <li>5% discount on snacks and drinks.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <button class="get-plan-btn basic">Get Plan</button>
+                </section>
+                
+                <section class="card advanced">
+                    <div class="recommended">⭐️ Recommended</div>
+                    <h3>Advanced</h3>
+                    <strong>Ideal for regular players seeking more playtime and perks.</strong>
+                    <ul>
+                        <li><h4>Price:</h4> <p><span class="price">$37.50</span> <span>/ mon</span> <em>previously $50</em>.</p></li>
+                        <li><h4>Includes:</h4> 
+                            <ul>
+                                <li>45 hours of playtime per month.</li>
+                                <li>15% discount on additional hours.</li>
+                                <li>15% discount on snacks and drinks.</li>
+                            </ul>
+                        </li>
+                        <li><h4>Benefits:</h4> 
+                            <ul>
+                                <li>Access to standard consoles and gaming PCs.</li>
+                                <li>Invitations to exclusive events and tournaments.</li>
+                                <li>Priority reservations during peak hours.</li>
+                                <li>Limited VIP access: 3 hours per month in VIP zones.</li>
+                                <li>Custom profiles: Save game settings and preferences.</li>
+                                <li>Access to Rest/Break Rooms.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <button class="get-plan-btn advanced">Get Plan</button>
+                </section>
+                
+                <section class="card premium">
+                    <h3>Premium</h3>
+                    <strong>For dedicated gamers who want the best experience.</strong>
+                    <ul>
+                        <li><h4>Price:</h4> <p><span class="price">$75</span> <span>/ mon</span> <em>previously $100</em>.</p></li>
+                        <li><h4>Includes:</h4> 
+                            <ul>
+                                <li>Unlimited playtime.</li>
+                                <li>Free snacks and drinks.</li>
+                                <li>20% discount on merchandise.</li>
+                            </ul>
+                        </li>
+                        <li><h4>Benefits:</h4> 
+                            <ul>
+                                <li>Full access to VIP zones (private rooms, premium equipment).</li>
+                                <li>Early access to new game releases and consoles.</li>
+                                <li>Priority reservations and premium customer support.</li>
+                                <li>Invitations to exclusive launch events and tournaments with special prizes.</li>
+                                <li>Custom profiles and saved game settings.</li>
+                                <li>Access to Rest/Break Rooms.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <button class="get-plan-btn premium">Get Plan</button>
+                </section>
+                
+                <section class="card vip">
+                    <h3>VIP Platinum Team Membership</h3>
+                    <strong>Designed for teams or groups from 2 to 20 people. Perfect for clans, esports teams, or social gatherings.</strong>
+                    <ul>
+                        <li><h4>Price:</h4> <p><span class="price">$250</span> <span>/ mon</span> <em>previously $350</em> for up to 5 members.</p>
+                            <ul>
+                                <li>$25 for each additional member (up to 20 members).</li>
+                                <li>Example: A team of 10 would pay $400 per month.</li>
+                            </ul>
+                        </li>
+                        <li><h4>Includes:</h4> 
+                            <ul>
+                                <li>Unlimited playtime for all team members.</li>
+                                <li>Free snacks and drinks.</li>
+                                <li>30% discount on merchandise.</li>
+                                <li>Dedicated team rooms with premium equipment and seating.</li>
+                            </ul>
+                        </li>
+                        <li><h4>Benefits:</h4> 
+                            <ul>
+                                <li>Full access to VIP zones, including private rooms for team practice and tournaments.</li>
+                                <li>Team tournaments and events: Exclusive competitions with clan-specific rewards and recognition.</li>
+                                <li>Custom branding: Display team logos and banners in rooms and on-screen.</li>
+                                <li>Priority reservations for group events and tournaments.</li>
+                                <li>Custom profiles: Shared team profiles and saved settings.</li>
+                                <li>Access to Rest/Break Rooms for all team members.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <button class="get-plan-btn vip-platinum">Get Plan</button>
+                </section>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="page-info-footer-wrap">
+            <p><strong>Pixel Arena</strong></p>
+            <p>Visit us at: 6789 S Redwood Rd, Salt Lake City, UT 84123</p>
+            <p>Send us an e-mail at <a href="mailto:pasupport@gmail.com">pasupport@gmail.com</a></p>
+            <p>Questions? Call or text: <a href="tel:+138555584793">+1 (385) 555-8493</a></p>
+            <p>© <span id="currentyear"></span> Pixel Arena™. All rights reserved</p>
+        </div>
+        <div class="course-info-footer-wrap">
+            <p>WDD231 Class Project</p>
+            <p>Alejandro Esteves</p>
+            <p class="lastModified" id="lastModified">lastModified</p>
+        </div>
+    </footer>
+</body>
+
+</html>
