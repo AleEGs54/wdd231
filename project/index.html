@@ -28,8 +28,11 @@
 <body>
     <header>
         <a href="https://aleegs54.github.io/wdd231/project/index.html">
-            <img src="images/pixel-arena-alternative-logo.webp" alt="pixel-art-alien-logo" width="187.5" height="125"
-                fetchpriority=high data-pixel-arena-logo>
+            <picture>
+                <source srcset="images/pixel-arena-alternative-logo-large.webp" media="(min-width: 912px)">
+                <img src="images/pixel-arena-alternative-logo.webp" alt="pixel-art-alien-logo" width="187.5" height="125"
+                    fetchpriority=high data-pixel-arena-logo>
+            </picture>
         </a>
         <img id="logo-picture" src="images/alien-logo.webp" alt="pixel-art-alien-logo" width="180" height="180"
             fetchpriority=high>
