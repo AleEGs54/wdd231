@@ -283,3 +283,88 @@ div.container-track-reverse.ctr-2{
 .services-list p{
     font-size: var(--paragraph-size);
 }
+
+/* End services */
+
+/* Memberships */
+
+.membership-cards{
+    margin: 1rem 0;
+}
+
+.membership-introduction{
+    text-align: center;
+    padding: 1rem;
+    font-size: var(--paragraph-size);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.cards-container{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.cards-container ul{
+    list-style: none;
+}
+
+.cards-container ul li{
+    padding-left: 1rem;
+}
+
+.card > ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.card{
+    border: 1px solid var(--primary-color);
+    border-radius: 1rem;
+    margin: 0 1rem;
+    padding: 1.5rem  1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-size: var(--paragraph-size);
+}
+
+.card > strong{
+    text-align: center;
+}
+
+.card h3{
+    text-align: center;
+}
+
+.price{
+    font-size: 5rem;
+    font-weight: 500;
+}
+
+.bring-friend{
+    font-weight: 600;
+    color: purple;
+}
+
+.get-plan-btn{
+
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    border-radius: .5rem;
+    height: 3rem;
+    font-size: var(--paragraph-size);
+    text-decoration: none;
+    text-align: center;
+    line-height: 3rem;
+}
+
+.get-plan-btn:hover{
+    /* This is for larger views */
+    background-color: #fff;
+    color: #000;
+    border: 2px solid black;
+}
