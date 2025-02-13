@@ -217,13 +217,18 @@ footer a {
     ul.link-navigator {
         flex-direction: row;
         width: 100%;
+        height: 5rem;
     }
 
     ul.link-navigator li {
+        height: 100%;
         font-weight: 500;
         font-size: 1.3rem;
     }
 
+    ul.link-navigator.link-navigator li a{
+        line-height: 2.5rem;
+    }
 
 
     ul.link-navigator.link-navigator li a:hover {

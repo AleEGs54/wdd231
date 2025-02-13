@@ -357,14 +357,12 @@ div.container-track-reverse.ctr-2 {
 }
 
 .card .recommended, .popular{
-    position: absolute;
-    right: 2rem;
-    top: 3%;
     border-radius: .5rem;
     padding: .5rem;
     font-size: 1rem;
     color: gold;
     background-color: var(--primary-color);
+    text-align: center;
 }
 
 .popular {
