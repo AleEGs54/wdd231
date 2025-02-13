@@ -355,6 +355,10 @@ div.container-track-reverse.ctr-2 {
     text-align: center;
 }
 
+li p em{
+    text-decoration:line-through;
+}
+
 .price {
     font-size: 5rem;
     font-weight: 500;
