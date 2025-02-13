@@ -45,8 +45,6 @@ async function apiFetch2(url) {
     const response = await fetch(url);
     if (response.ok) {
       const data = await response.json();
-      console.log(data); // testing only
-      // displayResults(data); // uncomment when ready
 
       displayGames(data)
 

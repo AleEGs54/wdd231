@@ -118,7 +118,7 @@
 .container-track{
     /* Positioning */
     display: flex;
-    animation: scrollconsoles 20s linear infinite;
+    animation: scrollconsoles 100s linear infinite;
     width: calc(200px * 24);
     height: 20rem;
     justify-content: center;
@@ -301,6 +301,10 @@ div.container-track-reverse.ctr-2{
     gap: 1rem;
 }
 
+.membership-introduction strong:first-child{
+    color: red;
+}
+
 .cards-container{
     display: flex;
     flex-direction: column;
@@ -362,9 +366,3 @@ div.container-track-reverse.ctr-2{
     line-height: 3rem;
 }
 
-.get-plan-btn:hover{
-    /* This is for larger views */
-    background-color: #fff;
-    color: #000;
-    border: 2px solid black;
-}
