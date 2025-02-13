@@ -159,6 +159,10 @@
      padding: 1rem 0;
 }
 
+.catalog-text{
+    margin: 2rem;
+}
+
 .container-track-reverse{
     /* Positioning */
     display: flex;

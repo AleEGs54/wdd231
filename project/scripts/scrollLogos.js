@@ -18,8 +18,8 @@ export default function displayLogos(data){
             div.classList.add('slide');
             image.setAttribute('src',`https://img.opencritic.com/${brand.imageSrcV2}`);
             image.setAttribute('alt', `${brand.name}`);
-            image.setAttribute('width', '180'); //Images are 1x1
-            image.setAttribute('height', '180');
+            image.setAttribute('width', '250'); //Images are 1x1
+            image.setAttribute('height', '250');
             para.innerHTML = `${brand.name}`;
             
             //Add data
