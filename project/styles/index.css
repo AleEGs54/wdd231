@@ -130,8 +130,7 @@
 
 .slide {
     /* Positioning */
-    width: 200px;
-    height: 200px;
+    width: 250px;
 
     text-align: center;
     margin: 1rem;
@@ -337,7 +336,7 @@ div.container-track-reverse.ctr-2 {
 }
 
 .card {
-    border: 1px solid var(--primary-color);
+    border: 2px solid var(--primary-color);
     border-radius: 1rem;
     margin: 0 1rem;
     padding: 1.5rem 1rem;

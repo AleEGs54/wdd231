@@ -7,7 +7,7 @@ export default function displayLogos(data){
         
         
         //Go through the array
-        data.forEach(brand => {
+        data.consoles.forEach(console => {
             
             //Create the elements
             const div = document.createElement('div');
@@ -16,11 +16,11 @@ export default function displayLogos(data){
             
             //Add clases and attributes
             div.classList.add('slide');
-            image.setAttribute('src',`https://img.opencritic.com/${brand.imageSrcV2}`);
-            image.setAttribute('alt', `${brand.name}`);
+            image.setAttribute('src',`${console.image}`);
+            image.setAttribute('alt', `${console.name}`);
             image.setAttribute('width', '250'); //Images are 1x1
             image.setAttribute('height', '250');
-            para.innerHTML = `${brand.name}`;
+            para.innerHTML = `${console.name}`;
             
             //Add data
             

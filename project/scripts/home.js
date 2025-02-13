@@ -7,23 +7,17 @@ styleNavAndFooter(); //To apply style to the nav and the footer
 
 //Fecth the API for consoles
 
-const apiUrl = `https://opencritic-api.p.rapidapi.com/platform`;
+const apiUrl = "data/consoles.json";
 
 
 async function apiFetch(url) {
     try {
-      const response = await fetch(url, {
-        method: "GET",
-        headers: {
-            'x-rapidapi-host': 'opencritic-api.p.rapidapi.com',
-            'x-rapidapi-key': `${GB_API_KEY}`
-        }
-      });
+      const response = await fetch(url);
       if (response.ok) {
         const data = await response.json();
 
         displayLogos(data);
-
+        console.log(data);
 
       } else {
           throw Error(await response.text());

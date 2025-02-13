@@ -1,0 +1,17 @@
+{
+    "consoles": [
+      { "name": "Xbox Series X/S", "image": "images/xbxs.webp" },
+      { "name": "PlayStation 5", "image": "images/ps5.webp" },
+      { "name": "Nintendo Switch", "image": "images/switch.webp" },
+      { "name": "PC", "image": "images/pc.webp" },
+      { "name": "Google Stadia", "image": "images/stadia.webp" },
+      { "name": "Xbox One", "image": "images/xb1.webp" },
+      { "name": "PlayStation 4", "image": "images/ps4.webp" },
+      { "name": "Meta Quest", "image": "images/oculus.webp" },
+      { "name": "PlayStation VR", "image": "images/psvr.webp" },
+      { "name": "HTC Vive", "image": "images/vive.webp" },
+      { "name": "Wii U", "image": "images/wiiu.webp" },
+      { "name": "Nintendo 3DS", "image": "images/3ds.webp" },
+      { "name": "PlayStation Vita", "image": "images/vita.webp" }
+    ]
+  }
