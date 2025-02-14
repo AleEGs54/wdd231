@@ -1,0 +1,17 @@
+@media screen and (min-width: 95rem) {
+
+    .cards-container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .vip{
+        grid-column: 2/4;
+        grid-row: 2/3;
+    }
+
+    form{
+        width: 40%;
+        margin: 0 auto;
+     }
+}

@@ -170,7 +170,7 @@
     transition: max-height .5s ease-out;
 }
 
-.card-content .visible {
+.card-content ul.visible {
     max-height: 50rem;
 }
 

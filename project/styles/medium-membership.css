@@ -1,0 +1,75 @@
+@media screen and (min-width: 57rem) {
+
+    .hero {
+        height: 68rem;
+    }
+
+    h1{
+        font-size: 3rem;
+    }
+
+    .hero-text {
+        width: 30rem;
+    }
+
+    .hero-text p{
+        font-size: 1.5rem;
+    }
+
+    .membership-cards{
+        width: 80%;
+        margin: 2rem auto;
+    }
+
+    .cards-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .card-content ul {
+        max-height: 50rem;
+    }
+
+    .card-content ul li, .card-content strong:first-child{
+        font-size: 1.3rem;
+    }
+    .card-header h3{
+        font-size: 1.9rem;
+    }
+
+    .vip{
+        grid-column: 1/3;
+    }
+
+    .card svg{
+        display: none;
+     }
+
+     /* Form */
+
+     form{
+        width: 60%;
+        margin: 0 auto;
+     }
+
+     legend{
+        font-size: 1.5rem;
+    }
+
+     label, #pcode::placeholder{
+        font-size: 1.2rem ;
+     }
+
+     .final-information{
+        font-size: 1.5rem;
+     }
+
+     .tyc{
+        font-size: 1.3rem;
+     }
+
+     dialog ul{
+        font-size: 1.2rem;
+     }
+
+}
