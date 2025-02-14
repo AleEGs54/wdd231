@@ -1,3 +1,8 @@
+import styleNavAndFooter from "./common-scripts.js";
+
+styleNavAndFooter(); //To apply style to the nav and the footer
+
+
 //getting the info from the url
 const urlString = window.location.href;
 
@@ -30,13 +35,10 @@ function showInfo(word){
 const container = document.querySelector("#user-info-container");
 
 container.innerHTML = `
-<h2>Personal Info</h2>
+<p>The following information and the Quote have been send to <strong>${showInfo("email")}</strong>. Please confirm this in the e-mail you will receive from us. Thank you again!</p>
+
 <p> Name: <strong>${showInfo("fname")}</strong> <strong>${showInfo("lname")}</strong></p>
 <p>Phone Number : <strong>${showInfo("telephone")}</strong></p>
-<p>E-mail <strong>${showInfo("email")}</strong></p>
-<h2>Business Info</h2>
-<p>Business/Organization's Name: <strong>${showInfo("Bname")}</strong></p>
-<p>Applicant's title in the business: <strong>${showInfo("title")}</strong></p>
-<p>Type of Membership: <strong>${showInfo("membership-level").toUpperCase()}</strong></p>
-<p>Business description: <strong>${showInfo("description")}</strong></p>
+<p>Type of Membership Selected: <strong>${showInfo("membership-level").toUpperCase()}</strong></p>
+<p>Promotional Code: <strong>${showInfo("pCode")}</strong></p>
 <p>Time of Submission: <strong>${showInfo("timestamp")}</strong></p>`

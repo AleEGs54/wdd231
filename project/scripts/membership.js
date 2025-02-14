@@ -20,3 +20,26 @@ svgElements.forEach(ele => {
     })
 
 })
+
+// store the current date in a variable
+const today = new Date();
+
+// writing the date
+currentyear.innerHTML = `${today.getFullYear()}`;
+lastModified.innerHTML = `Last Modification: ${document.lastModified}`;
+
+//timestamp when loading form
+document.addEventListener("DOMContentLoaded", () => {
+
+    let dateFormat = {
+        timeZone: "America/Denver", // Mountain Time
+        year: "numeric", month: "2-digit", day: "2-digit",
+        hour: "2-digit", minute: "2-digit", second: "2-digit",
+        hour12: false
+    };
+
+    let dateMT = new Intl.DateTimeFormat("en-US", dateFormat).format()
+
+
+    document.querySelector("#timestamp").value = dateMT;
+})
