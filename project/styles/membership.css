@@ -261,7 +261,7 @@ form {
 fieldset{
     display: flex;
     flex-direction: column;
-    gap: .7em;
+    gap: 2em;
     /* background-color: aquamarine; */
     border: 1px solid var(--accent-color);
     margin: .5em 1em ;
