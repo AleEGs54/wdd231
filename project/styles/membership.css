@@ -160,21 +160,29 @@
 }
 
 
-.card>ul {
+.card-content > ul {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-}
-
-.card-content{
+    
     max-height: 0;
     overflow: hidden;
     transition: max-height .5s ease-out;
 }
 
-.card-content.visible{
-    max-height: 50rem
+.card-content .visible {
+    max-height: 50rem;
 }
+
+/* .card-content{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .5s ease-out; 
+} */
+
+/* .card-content.visible{
+    max-height: 50rem
+} */
 
 .card>strong {
     text-align: center;
@@ -226,6 +234,10 @@ li p em {
 
 
 /* form */
+
+.required-info{
+    margin-left: 2rem;
+}
 
 .form-container h2, .form-container p{
     text-align: center;
@@ -332,6 +344,60 @@ input[type='submit']{
 
 .final-information, .tyc{
     margin: 1.5rem;
+    text-align: justify;
+}
+
+/* Modal - Dialog */
+
+dialog{
+    width: 90%;
+    margin: 0 auto;
+    padding: 3em;
+    border: 1px solid var(--accent-color);
+    border-radius: .2em;
+    box-shadow: 5px 5px 12px 0 black;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    gap: 2em;
+    text-align: justify;
+}
+
+dialog h3{
+    margin: 1em ;
+}
+
+dialog button{
+
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    width: 4em;
+    justify-self: flex-end;
+    padding: .5rem 1rem;
+    border: none;
+    background-color: transparent;
+}
+
+dialog .close-button:hover{
+    cursor: pointer;
+}
+
+::backdrop{
+    background-color: rgba(0, 0, 0,0.5);
+}
+
+dialog ul{
+    display: flex;
+    flex-direction: column;
+    margin: 2em 0;
+    background-color: transparent;
+    gap: .5em;
+}
+
+dialog li{
+    background-color: transparent;
+    list-style-type: circle;
     text-align: justify;
 }
 

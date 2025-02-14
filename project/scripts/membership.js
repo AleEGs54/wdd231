@@ -1,4 +1,5 @@
 import styleNavAndFooter from "./common-scripts.js";
+import displayModal from "./displayModal.js";
 
 styleNavAndFooter(); //To apply style to the nav and the footer
 
@@ -11,10 +12,12 @@ svgElements.forEach(ele => {
 
     ele.addEventListener("click", () =>{
 
-        const cardContent = ele.closest('.card').querySelector('.card-content');
+        // const cardContent = ele.closest('.card').querySelector('.card-content');
+        const ul = ele.closest('.card').querySelector('ul');
         
         // Toggle to show/hide
-        cardContent.classList.toggle("visible");
+        // cardContent.classList.toggle("visible");
+        ul.classList.toggle("visible");
 
 
     })
@@ -43,3 +46,30 @@ document.addEventListener("DOMContentLoaded", () => {
 
     document.querySelector("#timestamp").value = dateMT;
 })
+
+// Llama a esta función después de cargar los datos
+async function loadAndRenderLegalData() {
+    try {
+      const response = await fetch('data/legal-data.json');
+      if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+      const data = await response.json();
+      console.log(data);
+      renderLegalData(data);
+    } catch (error) {
+      console.error("Error loading legal data:", error);
+    }
+  }
+  
+  // Llama a la función cuando el script se carga
+  loadAndRenderLegalData();
+
+//Displaying the modal
+function renderLegalData(data){
+
+    const tyc = document.querySelector(".terms");
+    
+    tyc.addEventListener("click", () => {
+        displayModal(data);
+    })
+
+}
