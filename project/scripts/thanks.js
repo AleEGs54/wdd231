@@ -1,44 +1,89 @@
 import styleNavAndFooter from "./common-scripts.js";
+styleNavAndFooter(); // To apply style to the nav and the footer
 
-styleNavAndFooter(); //To apply style to the nav and the footer
-
-
-//getting the info from the url
+// Getting the info from the URL
 const urlString = window.location.href;
-
 console.log("url: ", urlString);
 
-
-//store only the useful part
-
+// Store only the useful part
 const userInfo = urlString.split("?")[1].split("&");
-console.log(userInfo)
+console.log(userInfo);
 
-//This function takes a key name and returns the value 
-function showInfo(word){
-
-    let value = ""
-
+// This function takes a key name and returns the value
+function showInfo(word) {
+    let value = "";
     userInfo.forEach((element) => {
-        if(element.startsWith(word))
-        {
-             value = element.split("=")[1].replace('%40', '@').replaceAll("+", " ");
+        if (element.startsWith(word)) {
+            value = element.split("=")[1].replace('%40', '@').replaceAll("+", " ");
         }
-        
-    })
-    //decodeURIComponent devuelve el string con : y . correctamente escritos
-    return(decodeURIComponent(value));
+    });
+    // decodeURIComponent returns a string with : and . correctly written.
+    return decodeURIComponent(value);
 }
 
-//Getting the user-info-container
-
+// Getting the user-info-container
 const container = document.querySelector("#user-info-container");
 
-container.innerHTML = `
-<p>The following information and the Quote have been send to <strong>${showInfo("email")}</strong>. Please confirm this in the e-mail you will receive from us. Thank you again!</p>
+// Create an object to store the current quote information
+const currentQuote = {
+    email: showInfo("email"),
+    fname: showInfo("fname"),
+    lname: showInfo("lname"),
+    telephone: showInfo("telephone"),
+    membershipLevel: showInfo("membership-level").toUpperCase(),
+    pCode: showInfo("pCode"),
+    timestamp: showInfo("timestamp") // This is the timestamp we will compare
+};
 
-<p> Name: <strong>${showInfo("fname")}</strong> <strong>${showInfo("lname")}</strong></p>
-<p>Phone Number : <strong>${showInfo("telephone")}</strong></p>
-<p>Type of Membership Selected: <strong>${showInfo("membership-level").toUpperCase()}</strong></p>
-<p>Promotional Code: <strong>${showInfo("pCode")}</strong></p>
-<p>Time of Submission: <strong>${showInfo("timestamp")}</strong></p>`
+// Check if there is any previous data in localStorage
+let previousQuotes = JSON.parse(localStorage.getItem("quotes")) || [];
+
+// Function to check if the current timestamp already exists in previous quotes
+function isDuplicateQuote(quotes, currentTimestamp) {
+    return quotes.some(quote => quote.timestamp === currentTimestamp);
+}
+
+if (isDuplicateQuote(previousQuotes, currentQuote.timestamp)) {
+    // If the timestamp is a duplicate, reject the new entry
+    container.innerHTML += `<p>This quote has already been submitted. Please do not refresh the page.</p>`;
+} else {
+    if (previousQuotes.length === 0) {
+        // If no previous orders, show the message
+        container.innerHTML += `<p>No previous orders from this IP.</p>`;
+    } else {
+        // If there are previous orders, display them in a box on the right side of the page
+        const previousOrdersBox = document.createElement("div");
+
+        previousOrdersBox.innerHTML = "<h3>Previous Orders From Your Account</h3>";
+
+        previousQuotes.forEach((quote, index) => {
+            previousOrdersBox.innerHTML += `
+                <div class="prev-order">
+                    <p><strong>Order ${index + 1}:</strong></p>
+                    <p>Name: ${quote.fname} ${quote.lname}</p>
+                    <p>Email: ${quote.email}</p>
+                    <p>Membership: ${quote.membershipLevel}</p>
+                    <p>Timestamp: ${quote.timestamp}</p>
+                </div>
+            `;
+
+            container.appendChild(previousOrdersBox);
+        });
+
+        document.querySelector(".orders").appendChild(previousOrdersBox);
+    }
+
+    // Add the current quote to the localStorage since it's not a duplicate
+    previousQuotes.push(currentQuote);
+    localStorage.setItem("quotes", JSON.stringify(previousQuotes));
+
+    // Display the current quote information
+    container.innerHTML = `
+    <p>The following information and the Quote have been sent to <strong>${currentQuote.email}</strong>. Please confirm this in the e-mail you will receive from us. Thank you again!</p>
+    <p> Name: <strong>${currentQuote.fname}</strong> <strong>${currentQuote.lname}</strong></p>
+    <p>Phone Number: <strong>${currentQuote.telephone}</strong></p>
+    <p>Type of Membership Selected: <strong>${currentQuote.membershipLevel}</strong></p>
+    <p>Promotional Code: <strong>${currentQuote.pCode}</strong></p>
+    <p>Time of Submission: <strong>${currentQuote.timestamp}</strong></p>
+    `;
+}
