@@ -1,6 +1,7 @@
 import styleNavAndFooter from "./common-scripts.js";
 import displayModal from "./displayModal.js";
 
+
 styleNavAndFooter(); //To apply style to the nav and the footer
 
 //Opening the membership cards
@@ -47,14 +48,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-
 // Llama a esta función después de cargar los datos
 async function loadAndRenderLegalData() {
     try {
       const response = await fetch('data/legal-data.json');
       if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
       const data = await response.json();
-      console.log(data);
       renderLegalData(data);
     } catch (error) {
       console.error("Error loading legal data:", error);

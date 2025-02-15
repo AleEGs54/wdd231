@@ -1,0 +1,47 @@
+[
+    {
+        "type": "non-member",
+        "title": "⏳ Pay-Per-Hour",
+        "description": "Perfect for first-timers or occasional visitors who want to pay only for the time they play.",
+        "price": "$10",
+        "per": "per hour",
+        "details": "No commitment – Pay only for the time spent. Ideal for those who want flexibility and no ongoing membership."
+    },
+    {
+        "type": "basic",
+        "title": "📜 Basic",
+        "description": "For those who visit occasionally but want better rates.",
+        "price": "$15",
+        "per": "/ mon",
+        "details": "Includes 15 hours of playtime per month and 10% off additional hours. Ideal for occasional gamers looking for savings.",
+        "previousPrice": "$20"
+    },
+    {
+        "type": "advanced",
+        "title": "🏹 Advanced",
+        "description": "Ideal for regular players seeking more playtime and perks.",
+        "price": "$37.50",
+        "per": "/ mon",
+        "details": "Offers 45 hours of playtime per month, discounts on snacks and drinks, and 3 hours of VIP access. Great for frequent gamers wanting extra perks.",
+        "previousPrice": "$50"
+    },
+    {
+        "type": "gold",
+        "title": "💎 Premium",
+        "description": "The ultimate experience for dedicated gamers.",
+        "price": "$75",
+        "per": "/ mon",
+        "details": "Unlimited playtime, full access to VIP zones, and invitations to exclusive events. Perfect for serious gamers wanting premium experiences.",
+        "previousPrice": "$100"
+    },
+    {
+        "type": "platinum",
+        "title": "⚔️ VIP Team Membership Clans & Squads",
+        "description": "Perfect for teams or groups from 2 to 20 people looking to play and compete together.",
+        "price": "$250",
+        "per": "/ mon",
+        "details": "Unlimited playtime for all team members, dedicated team rooms, and exclusive competitions. Ideal for clans, esports teams, or social gatherings.",
+        "additionalPrice": "$25 for each additional member up to 20 members.",
+        "previousPrice": "$350"
+    }
+]
