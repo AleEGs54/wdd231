@@ -1,0 +1,43 @@
+@media screen and (min-width: 57rem) {
+
+    .section{
+        margin: 3rem 0;
+        gap: 4rem;
+    }
+
+    .commentary{
+        width: 80%;
+    }
+
+    .forward-section{
+        text-align: center;
+    }
+
+
+    .commentary-one, .commentary-three{
+        grid-template-areas: 
+        "quote picture"
+        "name picture"
+        ;
+    }
+
+    .commentary-two, .commentary-four{
+        grid-template-areas: 
+        "picture quote"
+        "picture name"
+        ;
+    }
+
+    .commentary q, .commentary em{
+        font-size: 1.2rem;
+    }
+
+    .carousel {
+        margin: 1rem auto;
+        width: 80%;
+        height: 40rem;
+        position: relative;
+    }
+    
+
+}

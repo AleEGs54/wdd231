@@ -70,7 +70,7 @@
 
 /* Quotes section */
 
-section{
+.section{
     margin: 1rem 0;
     display: flex;
     flex-direction: column;
@@ -118,7 +118,7 @@ section{
 /* visit-cards */
 
 #building-pictures{
-    margin: 2rem 0;
+    margin: 5rem 0 0 0;
 }
 
 .title{
