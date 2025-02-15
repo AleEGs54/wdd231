@@ -49,8 +49,7 @@
     animation: toappear .75s ease-out 1 forwards;
 }
 
-.hero-text p,
-#call-to-action {
+.hero-text p{
     font-size: var(--paragraph-size);
 
 }
@@ -68,40 +67,6 @@
     }
 
 }
-
-#call-to-action {
-    height: 4rem;
-
-    border: 1px solid #fff;
-    margin: 1rem 0;
-    background-color: rgba(0, 0, 0, .5);
-
-    /* Positioning */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-[data-title] {
-    color: rgb(109, 192, 79);
-}
-
-[data-membership-title] {
-    color: rgb(165, 129, 227);
-}
-
-#call-to-action:active {
-    background-color: rgba(0, 0, 0, .8);
-}
-
-#call-to-action a:visited,
-#call-to-action a {
-
-    color: var(--text-color);
-    text-decoration: none;
-
-}
-
 /* Membership cards */
 
 
