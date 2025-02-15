@@ -19,9 +19,8 @@ function showInfo(word) {
     return decodeURIComponent(value);
 }
 
-// Getting the user-info-container and main elements
+// Getting the user-info-container and orders container elements
 const container = document.querySelector("#user-info-container");
-const main = document.querySelector("main");
 const ordersContainer = document.querySelector(".orders");
 
 // Create an object to store the current quote information
@@ -72,45 +71,21 @@ if (previousQuotes.length > 0) {
     });
 
     ordersContainer.appendChild(previousOrdersBox);
+}
 
-    // Now check if the current quote is a duplicate
-    if (isDuplicateQuote(previousQuotes, currentQuote.timestamp)) {
-        // If the timestamp is a duplicate, reject the new entry
-        main.innerHTML = ``; // Clear the main content
-        main.innerHTML += `
-        <h1>Thank You!</h1>
-        <p>This quote has already been submitted. Please do not refresh the page.</p>
-        `;
-        ordersContainer.innerHTML = "";
-    } else {
-        // Add the current quote to the localStorage since it's not a duplicate
-        previousQuotes.push(currentQuote);
-        localStorage.setItem("quotes", JSON.stringify(previousQuotes));
-
-        // Display the current quote information
-        container.innerHTML = ``; // Clear the container before adding new content
-        container.innerHTML = `
-        <p>The following information and the Quote have been sent to <strong>${currentQuote.email}</strong>. Please confirm this in the e-mail you will receive from us. Thank you again!</p>
-        <p> Name: <strong>${currentQuote.fname}</strong> <strong>${currentQuote.lname}</strong></p>
-        <p>Phone Number: <strong>${currentQuote.telephone}</strong></p>
-        <p>Type of Membership Selected: <strong>${currentQuote.membershipLevel}</strong></p>
-        <p>Promotional Code: <strong>${currentQuote.pCode}</strong></p>
-        <p>Time of Submission: <strong>${currentQuote.timestamp}</strong></p>
-        `;
-    }
-} else {
-    // If no previous orders, add the current quote to localStorage
+// Now check if the current quote is a duplicate
+if (!isDuplicateQuote(previousQuotes, currentQuote.timestamp)) {
+    // Add the current quote to the localStorage since it's not a duplicate
     previousQuotes.push(currentQuote);
     localStorage.setItem("quotes", JSON.stringify(previousQuotes));
-
-    // Display the current quote information
-    container.innerHTML = ``; // Clear the container before adding new content
-    container.innerHTML = `
-    <p>The following information and the Quote have been sent to <strong>${currentQuote.email}</strong>. Please confirm this in the e-mail you will receive from us. Thank you again!</p>
-    <p> Name: <strong>${currentQuote.fname}</strong> <strong>${currentQuote.lname}</strong></p>
-    <p>Phone Number: <strong>${currentQuote.telephone}</strong></p>
-    <p>Type of Membership Selected: <strong>${currentQuote.membershipLevel}</strong></p>
-    <p>Promotional Code: <strong>${currentQuote.pCode}</strong></p>
-    <p>Time of Submission: <strong>${currentQuote.timestamp}</strong></p>
-    `;
 }
+
+// Display the current quote information
+container.innerHTML = `
+<p>The following information and the Quote have been sent to <strong>${currentQuote.email}</strong>. Please confirm this in the e-mail you will receive from us. Thank you again!</p>
+<p> Name: <strong>${currentQuote.fname}</strong> <strong>${currentQuote.lname}</strong></p>
+<p>Phone Number: <strong>${currentQuote.telephone}</strong></p>
+<p>Type of Membership Selected: <strong>${currentQuote.membershipLevel}</strong></p>
+<p>Promotional Code: <strong>${currentQuote.pCode}</strong></p>
+<p>Time of Submission: <strong>${currentQuote.timestamp}</strong></p>
+`;
