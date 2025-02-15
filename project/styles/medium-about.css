@@ -1,5 +1,14 @@
 @media screen and (min-width: 57rem) {
 
+    .hero {
+        height: 68rem;
+    }
+
+    .hero-text {
+        width: 30rem;
+
+    }
+
     .section{
         margin: 3rem 0;
         gap: 4rem;
