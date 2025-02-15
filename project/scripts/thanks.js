@@ -4,10 +4,8 @@ styleNavAndFooter(); // To apply style to the nav and the footer
 // Getting the info from the URL
 const urlString = window.location.href;
 
-
 // Store only the useful part
 const userInfo = urlString.split("?")[1].split("&");
-
 
 // This function takes a key name and returns the value
 function showInfo(word) {
@@ -23,6 +21,7 @@ function showInfo(word) {
 
 // Getting the user-info-container
 const container = document.querySelector("#user-info-container");
+const ordersContainer = document.querySelector(".orders");
 
 // Create an object to store the current quote information
 const currentQuote = {
@@ -43,48 +42,62 @@ function isDuplicateQuote(quotes, currentTimestamp) {
     return quotes.some(quote => quote.timestamp === currentTimestamp);
 }
 
-//getting main
-const main = document.querySelector("main")
-const orders = document.querySelector(".orders");
+// Remove placeholder orders if there are no previous quotes
+if (previousQuotes.length === 0) {
+    // Clear the placeholder orders
+    const placeholderOrders = document.querySelectorAll(".prev-order");
+    placeholderOrders.forEach(order => order.remove());
 
-if (isDuplicateQuote(previousQuotes, currentQuote.timestamp)) {
-    // If the timestamp is a duplicate, reject the new entry
+    // Add a message indicating no previous orders
+    ordersContainer.innerHTML = `<h3>No Previous Orders From Your Account</h3>`;
+}
 
-    main.innerHTML = ``;
-    main.innerHTML += `
-    <h1>Thank You!</h1>
-    <p>This quote has already been submitted. Please do not refresh the page.</p>
-    `;
-    orders.innerHTML = "";
-} else {
-    if (previousQuotes.length === 0) {
-        // If no previous orders, show the message
-        container.innerHTML += `<p>No previous orders from Your Account.</p>`;
+// First, check if there are previous quotes in localStorage
+if (previousQuotes.length > 0) {
+    // If there are previous orders, display them in a box on the right side of the page
+    const previousOrdersBox = document.createElement("div");
+    ordersContainer.innerHTML = "";
+
+    previousQuotes.forEach((quote, index) => {
+        previousOrdersBox.innerHTML += `
+            <div class="prev-order">
+                <p><strong>Order ${index + 1}:</strong></p>
+                <p>Name: ${quote.fname} ${quote.lname}</p>
+                <p>Email: ${quote.email}</p>
+                <p>Membership: ${quote.membershipLevel}</p>
+                <p>Timestamp: ${quote.timestamp}</p>
+            </div>
+        `;
+    });
+
+    ordersContainer.appendChild(previousOrdersBox);
+
+    // Now check if the current quote is a duplicate
+    if (isDuplicateQuote(previousQuotes, currentQuote.timestamp)) {
+        // If the timestamp is a duplicate, reject the new entry
+        container.innerHTML = ``;
+        container.innerHTML += `
+        <h1>Thank You!</h1>
+        <p>This quote has already been submitted. Please do not refresh the page.</p>
+        `;
+        ordersContainer.innerHTML = "";
     } else {
-        // If there are previous orders, display them in a box on the right side of the page
-        const previousOrdersBox = document.createElement("div");
+        // Add the current quote to the localStorage since it's not a duplicate
+        previousQuotes.push(currentQuote);
+        localStorage.setItem("quotes", JSON.stringify(previousQuotes));
 
-        orders.innerHTML = "";
-
-
-        previousQuotes.forEach((quote, index) => {
-            previousOrdersBox.innerHTML += `
-                <div class="prev-order">
-                    <p><strong>Order ${index + 1}:</strong></p>
-                    <p>Name: ${quote.fname} ${quote.lname}</p>
-                    <p>Email: ${quote.email}</p>
-                    <p>Membership: ${quote.membershipLevel}</p>
-                    <p>Timestamp: ${quote.timestamp}</p>
-                </div>
-            `;
-
-            container.appendChild(previousOrdersBox);
-        });
-
-        orders.appendChild(previousOrdersBox);
+        // Display the current quote information
+        container.innerHTML = `
+        <p>The following information and the Quote have been sent to <strong>${currentQuote.email}</strong>. Please confirm this in the e-mail you will receive from us. Thank you again!</p>
+        <p> Name: <strong>${currentQuote.fname}</strong> <strong>${currentQuote.lname}</strong></p>
+        <p>Phone Number: <strong>${currentQuote.telephone}</strong></p>
+        <p>Type of Membership Selected: <strong>${currentQuote.membershipLevel}</strong></p>
+        <p>Promotional Code: <strong>${currentQuote.pCode}</strong></p>
+        <p>Time of Submission: <strong>${currentQuote.timestamp}</strong></p>
+        `;
     }
-
-    // Add the current quote to the localStorage since it's not a duplicate
+} else {
+    // If no previous orders, add the current quote to localStorage
     previousQuotes.push(currentQuote);
     localStorage.setItem("quotes", JSON.stringify(previousQuotes));
 
