@@ -12,6 +12,10 @@ h1{
     font-size: 1.3rem;
 }
 
+.orders{
+    margin: 1rem 0;
+}
+
 .orders > div{
     margin: 0 auto;
     display: flex;
@@ -20,7 +24,20 @@ h1{
     align-items: center;
 }
 
+.orders h3{
+    text-align: center;
+}
+
 .prev-order{
     padding: 1rem;
     border: 1px solid black;
+}
+
+@media screen and (min-width: 57em) {
+    .orders > div{
+        display: grid;
+        width: 80%;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
 }

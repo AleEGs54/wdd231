@@ -3,11 +3,11 @@ styleNavAndFooter(); // To apply style to the nav and the footer
 
 // Getting the info from the URL
 const urlString = window.location.href;
-console.log("url: ", urlString);
+
 
 // Store only the useful part
 const userInfo = urlString.split("?")[1].split("&");
-console.log(userInfo);
+
 
 // This function takes a key name and returns the value
 function showInfo(word) {
@@ -43,18 +43,28 @@ function isDuplicateQuote(quotes, currentTimestamp) {
     return quotes.some(quote => quote.timestamp === currentTimestamp);
 }
 
+//getting main
+const main = document.querySelector("main")
+const orders = document.querySelector(".orders");
+
 if (isDuplicateQuote(previousQuotes, currentQuote.timestamp)) {
     // If the timestamp is a duplicate, reject the new entry
-    container.innerHTML += `<p>This quote has already been submitted. Please do not refresh the page.</p>`;
+
+    main.innerHTML = ``;
+    main.innerHTML += `
+    <h1>Thank You!</h1>
+    <p>This quote has already been submitted. Please do not refresh the page.</p>
+    `;
 } else {
     if (previousQuotes.length === 0) {
         // If no previous orders, show the message
-        container.innerHTML += `<p>No previous orders from this IP.</p>`;
+        container.innerHTML += `<p>No previous orders from Your Account.</p>`;
     } else {
         // If there are previous orders, display them in a box on the right side of the page
         const previousOrdersBox = document.createElement("div");
 
-        previousOrdersBox.innerHTML = "<h3>Previous Orders From Your Account</h3>";
+        orders.innerHTML = "";
+
 
         previousQuotes.forEach((quote, index) => {
             previousOrdersBox.innerHTML += `
@@ -70,7 +80,7 @@ if (isDuplicateQuote(previousQuotes, currentQuote.timestamp)) {
             container.appendChild(previousOrdersBox);
         });
 
-        document.querySelector(".orders").appendChild(previousOrdersBox);
+        orders.appendChild(previousOrdersBox);
     }
 
     // Add the current quote to the localStorage since it's not a duplicate
