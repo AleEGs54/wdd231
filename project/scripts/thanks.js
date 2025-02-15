@@ -55,6 +55,7 @@ if (isDuplicateQuote(previousQuotes, currentQuote.timestamp)) {
     <h1>Thank You!</h1>
     <p>This quote has already been submitted. Please do not refresh the page.</p>
     `;
+    orders.innerHTML = "";
 } else {
     if (previousQuotes.length === 0) {
         // If no previous orders, show the message
