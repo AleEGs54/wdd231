@@ -3,6 +3,11 @@ h1{
     padding: 1rem;
     margin: 0 auto;
 }
+
+main > p{
+    margin-bottom: 39vh;
+}
+
 #user-info-container{
     margin: 0 auto;
     padding: 1rem;
@@ -39,5 +44,9 @@ h1{
         width: 80%;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(3, 1fr);
+    }
+
+    main > p{
+        margin-bottom: 60vh;
     }
 }
