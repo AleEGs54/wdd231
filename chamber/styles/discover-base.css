@@ -188,6 +188,7 @@ section {
     transition: 200ms visibility ease-in-out, 200ms opacity ease-in-out;
     /* transition-delay: 200ms; */
     text-align: center;
+    max-height: 30em;
 }
 
 .slide[data-active] {

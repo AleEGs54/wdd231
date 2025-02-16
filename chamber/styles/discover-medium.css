@@ -90,6 +90,10 @@
         display: none;
     }
 
+    .slide{
+        max-height: none;
+    }
+
     /* historical places */
     .slide img {
         height: 60%;
